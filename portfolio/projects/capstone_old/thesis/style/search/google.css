@@ -1,0 +1,9 @@
+/****** Search ******/
+#header #search{ display:inline-block; float:left; margin:30px 0px 19px 78px; }
+#header #search input{ padding:3px 4px; height:22px; color:#222; width:571px; }
+#header #search #searchBtn{
+	display:inline-block; border:1px solid #2f5bb7; border-radius:2px; color:#fff; margin-left:15px; padding:6px 15px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4c8ffd), to(#4b8efc));
+	background: -moz-linear-gradient(top,  #4c8ffd,  #4b8efc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c8ffd', endColorstr='#4b8efc');
+}

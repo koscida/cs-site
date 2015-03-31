@@ -1,0 +1,8 @@
+/****** Navigation ******/
+#footer #footerNavigation{ clear:both; display:block; margin:0px auto; height:200px; overflow:hidden; width:1000px; }
+#footer #footerNavigation ul{ list-style-type:none; margin:30px 0px 0px 0px; padding:0px; }
+#footer #footerNavigation ul li{ display:inline-block; float:left; margin:0px 20px; width:140px; }
+#footer #footerNavigation ul li h2{ display:none; }
+#footer #footerNavigation ul li ul{ margin:0px; display:block; list-style-type:none; padding:0px; }
+#footer #footerNavigation ul li ul li{ display:block; margin:0px 0px 8px 0px; }
+#footer #footerNavigation ul li ul li a{ text-decoration:none; }

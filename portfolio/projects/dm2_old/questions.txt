@@ -1,0 +1,166 @@
+<?php
+
+$DB = @mysqli_connect (***, ***, ***, ***) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+
+function _router()
+{
+	$action = isset($_POST['action'])?$_POST['action']:'';
+	$ID = isset($_POST['questionID'])?$_POST['questionID']:'';
+	switch($action)
+	{
+		case 'question': displayQuestion($ID); break;
+		case 'savequestion': saveQuestion(); break;
+		case 'end': results(); break;
+		case 'start':
+		default: index(); break;
+	}
+}
+
+function index()
+{
+	?>
+	<div id="message">
+		<p>This is is a simple survey of preferences.  You will be shown three pictures and you are to pick whichever you like to best.</p>
+		<form method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
+			<input type="hidden" name="action" value="question" />
+			<input type="hidden" name="questionID" value="1" />
+			<input type="submit" value="Start" />
+		</form>
+	</div>		
+	<?php
+}
+
+function displayQuestion($ID)
+{
+	?>
+	<div id="message">
+		<p>Pick whichever picture you like the best</p>
+	</div>
+	
+	<form method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
+	
+		<div class="option">
+			<img src="image/question<?php echo $ID; ?>_1.png" /><br/>
+			<input type="radio" name="answer" value="1" />
+			<label>Picture 1</label>
+		</div>
+		
+		<div class="option">
+			<img src="image/question<?php echo $ID; ?>_2.png" /><br/>
+			<input type="radio" name="answer" value="2" />
+			<label>Picture 2</label>
+		</div>
+		
+		<div class="option">
+			<img src="image/question<?php echo $ID; ?>_3.png" /><br/>
+			<input type="radio" name="answer" value="3" />
+			<label>Picture 3</label>
+		</div>
+		
+		<br/>
+		<br/>
+		<input type="hidden" name="action" value="savequestion" />
+		<input type="hidden" name="questionID" value="<?php echo $ID; ?>" />
+		<input type="submit" value="Submit" />
+	</form>
+	<?php
+}
+
+function saveQuestion()
+{
+	$DB = @mysqli_connect (***, ***, ***, ***) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+	
+	$ID = $_POST['questionID'];
+	if(isset($_POST['answer']))
+	{
+		$sql = "insert into *** values (".$ID.", ".$_POST['answer'].")";
+		$result = mysqli_query($DB, $sql);
+		if($ID == 7)
+			results();
+		else
+			displayQuestion($ID + 1);
+	}
+	else
+	{
+		displayQuestion($ID);
+	}
+}
+
+function results()
+{
+	?>
+	<div id="message">
+		<p> This is the end of the game. Most of these pictures were based on common design rules.  This was a simple test to see if the rules held up when people were given no content to what they were seeing.</p>
+	</div>
+	<?php
+	
+		$DB = @mysqli_connect (***, ***, ***, ***) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+	
+		$table = array();
+		$sql = "select * from ***";
+		$result = mysqli_query($DB, $sql);
+		while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+			$table[$row['QUESTION_ID']][] = $row['ANSWER'];
+		mysqli_free_result($result);
+		
+		$questionInfo = array();
+		$sql = 'select * from ***';
+		$result = mysqli_query($DB, $sql);
+		while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+			$questionInfo[$row['QUESTION_ID']] = $row['DESIGN_RULE'];
+		mysqli_free_result($result);
+		
+		mysqli_close($DB); 
+	
+		//echo '<pre>'.print_r($table,true).'</pre>';
+		$totalCounts = array();
+		$ansCounts = array();
+		foreach($table as $id => $answers)
+		{
+			$totalCounts[$id] = count($answers);
+			$ansCounts[$id][1] = 0;
+			$ansCounts[$id][2] = 0;
+			$ansCounts[$id][3] = 0;
+			foreach($answers as $index => $ans)
+				$ansCounts[$id][$ans]++;
+		}
+		
+		for($i=1; $i<8; $i++)
+		{
+		?>
+			<div class="result">
+				<h3>Question <?php echo $i; ?></h3>
+				
+				
+				<div class="images">
+					<?php
+					for($j=3; $j>0; $j=$j-1)
+					{
+					echo '<div class="img">';
+						echo '<img src="image/question'.$i.'_'.$j.'.png"/>';
+						echo '<p>'.substr( (100*($ansCounts[$i][$j]/$totalCounts[$i]) ), 0, 5).'%</p>';
+						//echo '<p>Count: '.$totalCounts[$i].' Total: '.$ansCounts[$i][$j].'</p>';
+					echo '</div>';
+					}
+					?>
+				</div>
+				
+				<div class="info">
+					<h4>Design Rule:</h4>
+					<p><?php echo $questionInfo[$i]; ?></p>
+				</div>
+				
+			</div>
+		<?php
+		}
+		?>
+		
+		<form method="post" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
+			<input type="hidden" name="action" value="start" />
+			<input type="submit" value="Play Again" />
+		</form>
+	
+	<?php
+}
+
+?>

@@ -1,0 +1,47 @@
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12{
+	margin:5px;
+	padding:10px;
+	display:inline-block;
+	overflow:hidden;
+}
+
+.grid_1{  width:50px;  }
+.grid_2{  width:130px; }
+.grid_3{  width:210px; }
+.grid_4{  width:290px; }
+.grid_5{  width:370px; }
+.grid_6{  width:450px; }
+.grid_7{  width:540px; }
+.grid_8{  width:610px; }
+.grid_9{  width:690px; }
+.grid_10{ width:770px; }
+.grid_11{ width:850px; }
+.grid_12{ width:930px; }
+
+
+.left{ 	float:left; }
+.right{ float:right;}
+.center{
+	margin:5px 5px;
+	display:inline-block;
+}
+.centerOnly{
+	display:block;
+	margin:5px auto 10px auto;
+}
+
+.noMargin{
+	margin:0px;
+}
+

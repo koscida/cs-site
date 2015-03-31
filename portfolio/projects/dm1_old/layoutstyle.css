@@ -1,0 +1,86 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #306;
+	background-color: #CCC;
+	background-image: url(image/background.jpg);
+	background-repeat: repeat-x;
+}
+#container {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+/*title*/
+#titlebox {
+	position: absolute;
+	height: 125px;
+	width: 524px;
+	top: 10px;
+	left: 0px;
+	background-image: url(image/believetitle.gif);
+	background-repeat: no-repeat;
+	margin-right: 250px;
+	margin-left: 250px;
+	padding-left: 250px;
+}
+#titlebox h1 {
+	font-size: 1px;
+	text-indent: -999em;
+}
+
+/*side navigation*/
+#navigation {
+	position: absolute;
+	height: 568px;
+	width: 200px;
+	left: 824px;
+	top: 135px;
+	padding-top:10px;
+	padding-left:0px;
+	list-style-type: none;
+}
+#navigation ul li {
+	list-style-type: none;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	float:left;
+}
+#navigation a{
+	display: block;
+	text-decoration: none;
+	width: 150px;
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #3A1886;
+}
+#navigation a:link, a:visited {
+	background-color: #EDEDED;
+}
+#navigation a:hover, a:active{
+	background-color: #C3C3C3;
+}
+
+/*what i believe*/
+#content {
+	position: absolute;
+	width: 784px;
+	top: 135px;
+	left: 0px;
+	margin: 20px;
+	padding:20px;
+	background-color: #EDEDED;
+	filter: alpha(opacity=60);
+	opacity:.6;
+}
+#content p  {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: #303;
+}

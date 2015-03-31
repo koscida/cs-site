@@ -1,0 +1,63 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+	<title>Brittany Kos Portfolio</title> 
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="960.css" media="screen" title="Default" /> 
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" /> 
+	
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script type="text/javascript" src="projectscript.js"></script> 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script language="JavaScript">
+	</script>
+	
+</head>
+<body>
+<div id="wrapper">
+<div class="container">
+
+	<div id="header">
+		<script>header();</script>
+	</div>
+	
+	<div id="navigation">
+		<script>navigation("Projects");</script>
+	</div>
+	
+	<div id="gallery">
+		<script>projectGallery(1);</script>
+	</div>
+	
+	<div id="body">
+		<div id="name"><h2>Webscan</h2></div>
+		
+		<div id="images" class="pic">
+			<img src="images/project_webscan_main.png" width="350" height="185" 
+					style="border:0px;
+						background:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#777777));
+						background: -moz-linear-gradient(top,  #FFFFFF,  #777777);
+						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#777777'); "/>
+		</div>
+		
+		<div id="description">
+			<p>This is a <a href="http://www.webscaninc.com/" onclick="window.open(this.href); return false;">Webscan</a> sponsored senior 
+			project I'm working on with a team of 4 other students.  We will be building an 
+			Android app that is capable of scanning bar codes, sending the images to a server, 
+			processing them, and recieveing responses back. </p>
+			
+			<p>Fall 2011 &ndash; Spring 2012</p>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="footer">
+		<script>footer();</script>
+	</div>
+	
+</div>
+</div>
+</body>
+</head>

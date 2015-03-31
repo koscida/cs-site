@@ -1,0 +1,96 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{  }
+h1, h2, h3{  }
+h1{  }
+h2{  }
+h3{  }
+p{  }
+a{  }
+a:link{  }
+a:visited{  }
+a:hover{  }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{  }
+#header #headerInner{  }
+
+/****** Logo ******/
+#header #logo{  }
+#header #logo #logoImg{ background:url('../images/logo_black.png') no-repeat; width:191px; height:78px; }
+
+/****** Search ******/
+#header #search{  }
+#header #search input{  }
+#header #search #searchBtn{  }
+
+/****** Header Navigation ******/
+#header #headerNavigation{  }
+#header #headerNavigation ul{  }
+#header #headerNavigation ul li{  }
+#header #headerNavigation ul li a{  }
+#header #headerNavigation ul li a:visited{  }
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{  }
+#body a{  }
+
+/****** Sidebar ******/
+#body #sideBar{  }
+#body #sideBar ul{  }
+#body #sideBar ul li{  }
+#body #sideBar ul li a{  }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{  }
+
+/****** Content ******/
+#body #content{  }
+
+/****** Content Text ******/
+#body #content #text{  }
+#body #content p{  }
+
+/****** Content Elements ******/
+#body #content #picElements{  }
+#body #content #picElements .element{  }
+#body #content #picElements .element img{  }
+#body #content #picElements .element p{  }
+
+/****** Ad Bar ******/
+#body #adBar{  }
+#body #adBar #adBarImg{ background:url('../images/adImg.png') no-repeat; height:600px; width:160px; }
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{  }
+#footerInner{  }
+
+/****** Navigation ******/
+#footer #footerNavigation{  }
+#footer #footerNavigation ul{   }
+#footer #footerNavigation ul li{  }
+#footer #footerNavigation ul li h2{  }
+#footer #footerNavigation ul li h2 a{  }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{  }
+#footer #footerNavigation ul li ul li{  }
+#footer #footerNavigation ul li ul li a{  }
+
+
+/****** Copyright ******/
+#footer #copyright{  }
+#footer #copyright p{  }

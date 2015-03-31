@@ -1,0 +1,9 @@
+/****** Search ******/
+#header #search{ display:inline-block; float:left; padding-top:8px; width:420px; }
+#header #search input{ width:343px; display:inline-block; float:left; border:1px solid #999; padding:4px 4px 3px 4px; margin:1px 0px 0px 0px; border-radius:3px 0px 0px 3px; -moz-border-radius:3px 0px 0px 3px; }
+#header #search #searchBtn{ display:inline-block; float:left; padding:3px 6px 0px 6px; width:43px; height:20px; margin-top:1px; z-index:10;
+	border-top:1px solid #999; border-right:1px solid #999; border-bottom:1px solid #999; border-radius:0px 3px 3px 0px; -moz-border-radius:0px 3px 3px 0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #fefefe,  #ebebeb);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#ebebeb');
+}

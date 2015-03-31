@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*
+theme 2880017
+58C4B7 - green
+3A3F45 - dk grey
+5E6977 - med dk grey
+878F99 - med lt grey
+ACB6C1 - lt grey
+
+BF5CC9 - purple
+8968CE - purple
+6883CC - blue
+58C4B7 - green (teal)
+8FE969 - green
+DFF970 - yellow
+FFF072 - yellow
+
+
+7E6BCF
+6A7CCE
+6298C8
+58C4B7 - teal
+*/
+
+/* **************** */
+/*		layout		*/
+/* **************** */
+html, body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 150%;
+	color: #3A3F45;
+	background: url('../images/connect.png');
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+h1, h2 {
+	margin-left: 10px;
+}
+h2 {
+	font-size: 30px;
+}
+p {
+	margin-bottom: 20px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-transform: none;
+	text-decoration: underline;
+}
+
+header {
+	height: 40px;
+}
+#page {
+	height: 100%;
+	min-height: 100%;
+	margin-top: 40px;
+}
+
+
+/* **************** */
+/*		inputs		*/
+/* **************** */
+.inputWrapper, .inputWrapper label, .inputWrapper input[type=text], .inputWrapper textarea {
+	width: 100%;
+	margin-bottom: 10px;
+}
+label {
+	margin-bottom: 2px;
+}
+input[type=text], textarea {
+	padding: 7px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+textarea {
+	height: 100px;
+}
+input[type=submit] {
+	color: white;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 5px 18px 6px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 20px;
+	float: right;
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#58C4B7), to(#38A497));
+	background:-moz-linear-gradient(top, #58C4B7, #38A497);
+	
+	text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.5);
+	-webkit-text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.5);
+	-moz-text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.5);
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.honeypotWrapper, .honeypotInput {
+	height: 0px;
+	overflow: hidden;
+}
+
+
+
+
+
+/* **************** */
+/*		header		*/
+/* **************** */
+header {
+	background: #3A3F45;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+header .link div {
+	color: white;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+}
+header .link:hover div {
+	color: #58C4B7;
+	cursor: pointer;
+}
+header .link span {
+	height: 0;
+	display: block;
+	text-align: center;
+}
+header span:after {
+	content: "";
+	position: relative;
+	top: 7px;
+	width: 0;
+	height: 0;
+}
+header .active span {
+}
+header .active span:after {
+	bottom: -8px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #3A3F45;
+		
+}
+
+
+
+
+/* **************** */
+/*		body		*/
+/* **************** */
+#body {}
+.head {
+	min-height: 100px;
+}
+.section:nth-of-type(2) .head {
+	background: #6298C8;
+}
+.section:nth-of-type(3) .head {
+	background: #6A7CCE;
+}
+.section:nth-of-type(4) .head {
+	background: #7E6BCF;
+}
+.head h2 {
+	line-height: 100px;
+}
+.section {}
+.content {
+	padding: 20px 0;
+}
+
+
+
+
+/* **************** */
+/*		home		*/
+/* **************** */
+#homeSection {}
+#title {
+	font-family: 'Voltaire', sans-serif;
+	text-align: center;
+	background: #58C4B7;
+	color: black;
+}
+#title h1 {
+	font-size: 7em;
+	line-height: 1.5em;
+}
+#title p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+
+
+
+/* ******************** */
+/*		work		*/
+/* ******************** */
+#workSection {}
+
+
+
+
+/* **************** */
+/*		about		*/
+/* **************** */
+#aboutSection {}
+
+
+
+
+/* **************** */
+/*		contact		*/
+/* **************** */
+#contactSection {}

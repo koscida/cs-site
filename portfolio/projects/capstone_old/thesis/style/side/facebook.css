@@ -1,0 +1,7 @@
+/****** Sidebar ******/
+#body #sideBar{ display:inline-block; float:left; width:181px; }
+#body #sideBar ul{ list-style-type:none; padding:0px; }
+#body #sideBar ul li{  }
+#body #sideBar ul li a{ width:128px; display:block; padding:3px 8px 4px 28px; margin-left:18px; color: #333333; text-decoration:none; }
+#body #sideBar ul li a:hover{ background-color:#eff2f7; }
+#body #sideBar ul li a.here{ font-weight:bold; background-color: #D8DFEA; }

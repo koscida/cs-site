@@ -1,0 +1,152 @@
+/*
+green:  6f6
+yellow: fe6
+purple: 97f
+red:    f66
+*/
+.startGame, .startGameHover, .chooseGame, .chooseGameHover{
+	text-decoration:none;
+	font-size:60px;
+	font-weight:bold;
+	
+	background:#97f;
+	width:250px;
+	margin:30px;
+	padding:10px;
+	display:inline-block;
+	border-radius:30px;
+	-moz-border-radius:30px;
+}
+.chooseGame, .chooseGameHover{
+	width:300px;
+}
+.startGame, .chooseGame {
+	color:black;
+	background:#97f;
+}
+.startGameHover, .chooseGameHover{
+	color:#fe6;
+	background:#75d;
+}
+
+.username, .userNav, .userNavHover{
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+	
+	width:150px;
+	margin:10px;
+	padding:10px;
+	display:inline-block;
+	border-radius:30px;
+	-moz-border-radius:30px;
+}
+.userNav{
+	color:black;
+	background:#97f;
+}
+.userNavHover{
+	color:#fe6;
+	background:#75d;
+}
+
+
+
+
+.machine{
+	width:500px;
+	display:block;
+	padding:10px;
+	margin:10px auto;
+	overflow:hidden;
+	border:3px solid black;
+	border-radius:30px;
+	-moz-border-radius:30px;
+}
+.slot{
+	background:#fe6;
+	color:black;
+	font-size:20px;
+	display:inline-block;
+	width:100px;
+	height:150px;
+	margin:5px 5px 5px 10px;
+	padding:10px 0px;
+	overflow:hidden;
+	float:left;
+	text-align:center;
+	border:1px dotted black;
+	border-radius:2px;
+	-moz-border-radius:2px;
+}
+.slot img{
+	width:100px;
+	height:100px;
+	margin:20px auto;
+}
+.handleSpace{
+	display:inline-block;
+	height:150px;
+	width:100px;
+	margin:0px 10px 0px 20px;
+	padding:10px 0px 0px 0px;
+	overflow:hidden;
+	float:right;
+}
+.handle, .handleHover{
+	color:black;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	display:inline-block;
+	height:100px;
+	width:100px;
+	border-radius:100px;
+	-moz-border-radius:100px;
+}
+.handle{
+	background:#f66;	
+}
+.handleHover{
+	background:#d44;
+}
+.bar{
+	height:70px;
+	width:20px;
+	display:inline-block;
+	background:#666;
+}
+.money, .score{
+	width:500px;
+	color:#6f6;
+	font-weight:bold;
+	font-size:16px;
+	text-align:center;
+	clear:both;
+}
+
+
+
+
+#content .changeUsername{
+	font-size:16px;
+	font-weight:bold;
+}
+.changeButton, .changeButtonHover{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	margin:10px;
+	padding:5px 10px;
+	display:inline-block;
+	border-radius:30px;
+	-moz-border-radius:30px;
+}
+.changeButton{
+	color:black;
+	background:#97f;
+}
+.changeButtonHover{
+	color:#fe6;
+	background:#75d;
+}

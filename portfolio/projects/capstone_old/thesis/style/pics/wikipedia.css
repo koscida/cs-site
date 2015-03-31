@@ -1,0 +1,5 @@
+/****** Content Elements ******/
+#body #content #picElements{  }
+#body #content #picElements .element{ display:inline-block; width:250px; float:left; margin:8px 21px 22px 21px; padding:3px; background-color:#F9F9F9; border:1px solid #CCCCCC; }
+#body #content #picElements .element img{ width:250px; height:190px; margin:0px auto; }
+#body #content #picElements .element p{ padding:3px; font-size:12px; }

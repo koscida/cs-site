@@ -1,0 +1,3 @@
+/****** Logo ******/
+#header #logo{ display:inline-block; float:left; margin-right:10px; }
+#header #logo #logoImg{ width:110px; display:block; height:40px; margin:0px 10px 0px 0px; background:url('../../images/youtube_logo.png') no-repeat; }

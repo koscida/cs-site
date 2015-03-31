@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>Brittany Kos Portfolio</title> 
+	<meta charset="UTF-8"/> 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" title="Default" /> 
+	<link rel="stylesheet" type="text/css" href="css/gallery_images_style.css" media="screen" title="Default" /> 
+	<link rel="stylesheet" type="text/css" href="css/lightboxstyle.css" media="screen" />
+	
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/projects.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.effects.core.js"></script>
+	<script type="text/javascript" src="js/jquery.effects.slide.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+
+	<script>
+		var json = getJsonProjects();
+		
+		function countSections()
+		{
+			var codeCount = 0, experienceCount = 0, websitesCount = 0;
+			for(var i in json.projects.experience)
+			{
+				if(json.projects.experience[i].enabled == "true")
+					experienceCount ++;
+			}
+			for(var i in json.projects.code)
+			{
+				if(json.projects.code[i].enabled == "true")
+					codeCount ++;
+			}
+			for(var i in json.projects.websites)
+			{
+				if(json.projects.websites[i].enabled == "true")
+					websitesCount ++;
+			}  
+			alert("exp: " + experienceCount);
+			alert("code: " + codeCount);
+			alert("web: " + websitesCount);
+		}
+		
+		function printProj(obj)
+		{
+			var code = '';
+			code += "<div class='proj'>";
+			code += "	<a ";
+			code += "		class='thum " + obj.imgClass + " lightbox' ";
+			code += "		href='" + obj.imgPath + "' ";
+			code += "		rel='lightbox[proj]' ";
+			code += "		data=\" ";
+			if(obj.nameLong == "")
+				code += "		<h1>" + obj.nameShort + "</h1>";
+			else
+				code += "		<h1>" + obj.nameLong + "</h1>";
+			if(obj.groupLong == "")
+				code += "		<h2 class='borderBottom'>" + obj.groupShort + "</h2>";
+			else
+				code += "		<h2 class='borderBottom'>" + obj.groupLong + "</h2>";
+			if(obj.sponsor != ""){
+				code += "		<h2 class='borderBottom paddingTop'>";
+				code += "			<a href='" + obj.sponsorPath + "' onclick='window.open(this.href); return false;'>" + obj.sponsor + "</a>";
+				code += "		</h2>";
+			}
+			code += "			<h1 class='paddingTop'>" + obj.projDesc + "</h1>";
+			for(var j in obj.desc)
+			{
+				code += "		<p>" + obj.desc[j].desc + "</p>";
+			}
+			if(obj.projectFinalPath != "")
+				code += "		<p><a href='" + obj.projectFinalPath + "'>" + obj.projectFinalLink + "</a></p>";
+			if(obj.projectBeforePath != "")
+				code += "		<p><a href='" + obj.projectBeforePath + "'>" + obj.projectBeforeLink + "</a></p>";
+			code += "			<h2>" + obj.date + "</h2>";
+			code += "		\">";
+			code += "		<div class='proj_hover' style='display:none;'>";
+			code += "			<div class='title'>";
+			code += "				<span class='name'>" + obj.nameShort + "</span>";
+			code += "				<span class='group'>" + obj.groupShort + "</span>";
+			code += "			</div>";
+			if(obj.sponsor != "")
+				code += "		<div class='desc sponsor'>" + obj.sponsor + "</div>";
+			code += "			<div class='desc'>";
+			for(var j in obj.tags)
+			{
+				code += 				obj.tags[j].tag;
+				code += "			<span class='b'>&bull;</span> ";
+			}
+			code += "			</div>";
+			code += "		</div>";
+			code += "	</a>";
+			code += "</div>";
+			return code;
+		}
+	</script>
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<script>header();</script>
+	</div>
+</header>
+
+<section id="content">
+<div class="container">
+
+	<div id="page">
+	
+		<div id="pageHead">
+			<h2>Projects</h2>
+			<img src="images/gear11.png" />
+		</div>
+		
+		<div id="pageBody">
+			<div class="headers">
+				<div class="group1"><h3>Experience</h3></div>
+				<div class="group2"><h3>Websites</h3></div>
+				<div class="group1"><h3>Programming</h3></div>
+			</div>
+			
+			<div class="even">
+			<script>
+				
+				var exp = "";
+				exp += "<div class='col'><div class='colInner'>";
+				for(var i in json.projects.experience)
+				{
+					if(json.projects.experience[i].enabled == "true")
+					{
+						exp += printProj(json.projects.experience[i]);
+					}
+				}
+				exp += "</div></div>";
+				document.write(exp);
+				
+				var web = "", count = 0;
+				for(var i in json.projects.websites)
+				{
+					if(json.projects.websites[i].enabled == "true")
+					{
+						if(count == 0)
+							web += "<div class='col'><div class='colInner'>";
+						web += printProj(json.projects.websites[i]);
+						if(count == 2)
+							web += "</div></div>";
+						count ++;
+						if(count == 3)
+							count = 0;
+					}
+				}
+				document.write(web);
+				
+				var code = "";
+				code += "<div class='col'><div class='colInner'>";
+				for(var i in json.projects.code)
+				{
+					if(json.projects.code[i].enabled == "true")
+					{
+						code += printProj(json.projects.code[i]);
+					}
+				}
+				code += "</div></div>";
+				document.write(code);
+			</script>
+			</div>
+			
+			<script>
+				$(function() {
+					var w = $(window).width();
+					if( w > 768 )
+					{
+						$(".proj" || ".lightbox").mouseenter(
+							function(){
+								$(this).find(".proj_hover").show("slide", {direction: 'left'}, "500");
+							} 
+						);
+						$(".proj").mouseleave(
+							function () {
+								$(this).find(".proj_hover").hide("slide", {direction: 'left'}, "500");
+							}
+						);
+					}
+				});
+			</script>
+			
+		</div>
+	
+	</div>
+
+</div>
+</section>
+
+<footer>
+	<div class="container">
+		<script>footer();</script>
+	</div>
+</footer>
+	
+</body>
+</html>

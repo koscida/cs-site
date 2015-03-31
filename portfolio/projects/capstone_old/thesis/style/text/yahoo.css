@@ -1,0 +1,4 @@
+/****** Content Text ******/
+#body #content #text{ display:block; border:1px solid #B9C7D3; padding:0px 10px 10px 10px;
+	background-image: -moz-linear-gradient(center top , #F4F6F7, #FFFFFF);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+	<title>Brittany Kos's CS Page</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../960.css" media="screen" title="Default" />
+	<link rel="stylesheet" type="text/css" href="../indexstyle.css" media="screen" title="Default" />
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" />
+	<script type="text/javascript" src="../indexscript.js"></script>
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script type="text/javascript">
+		function displayResults(json)
+		{
+			var newDiv1 = document.createElement('p');
+			for(var i=0;i<json.feed.entry.length;i++)
+			{
+				var entry = json.feed.entry[i];
+				var content = document.createTextNode(entry.content.$t + ' ');
+				newDiv1.appendChild(content);
+			}
+			document.getElementById('googleCell1').appendChild(newDiv1);
+			
+			var newDiv2 = document.createElement('p');
+			var entry = json.feed.entry[2];
+			var content = document.createTextNode(entry.content.$t);
+			newDiv2.appendChild(content);
+			document.getElementById('googleCell2').appendChild(newDiv2);
+		}
+		
+		function JSONQuery()
+		{
+			var script = document.createElement('script');
+			script.setAttribute('src', 'http://spreadsheets.google.com/feeds/cells/0AjVk2Rng8IhIdHNuS2ZWUHRMM0c5Q0ZpLTNnZENFLWc/od6/public/basic?alt=json-in-script&callback=displayResults');
+			script.setAttribute('id', 'jsonScript');
+			script.setAttribute('type', 'text/javascript');
+			document.documentElement.firstChild.appendChild(script);
+		}
+	</script>
+</head> 
+
+
+<body> 
+<script>JSONQuery();</script>
+<div id="container">
+
+	<div id="header">
+		<script>header2();</script>
+	</div>
+	
+	<div class="pageTitleLeft grid_2 left" style="border:0px solid red;height:300px; width:82px;">
+		<script>subNavigation();</script>
+	</div>
+	
+	<div class="noMargin" style="width:840px;display:inline-block;">
+		<div class="grid_10 center color round">
+				<h1>Database Examples</h1>
+		</div>
+		
+		
+		<div class="grid_10 center color round" id="w8">
+			<h3><a>Google Spreadsheet Example</a></h3>
+			<div id="googleCell1">All Colors:</div>
+			<div id="googleCell2">Third Color:</div>
+			<a href="https://docs.google.com/spreadsheet/ccc?key=0AjVk2Rng8IhIdHNuS2ZWUHRMM0c5Q0ZpLTNnZENFLWc&hl=en_US#gid=0">Google Spreadsheet</a>
+		</div>
+		
+	</div>
+	
+	<div id="footer" class="round">
+		<script>footer();</script>
+	</div>
+	
+</div> <!-- end container -->
+</body> 
+</html> 

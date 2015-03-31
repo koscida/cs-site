@@ -1,0 +1,10 @@
+/****** Sidebar ******/
+#body #sideBar{ position:absolute; top:108px; border-left:3px solid #146eb4; border-bottom:2px solid #146eb4; border-bottom-left-radius:4px; -moz-border-radius-bottomleft:4px; }
+#body #sideBar ul{ list-style-type:none; padding:0px; margin:0px; }
+#body #sideBar ul li{ width:185px; display:block; background:#edf7ff; margin-bottom:-1px; border:1px solid #83abc6; }
+#body #sideBar ul li a{ display:block; padding-left:8px; line-height:25px; color:black; font-weight:bold; font-size:12px; font-family: Arial,sans-serif; text-decoration:none; }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{ border:0px solid white; color:white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5b25d), to(#cb8435));
+	background: -moz-linear-gradient(top , #f5b25d, #cb8435);
+}

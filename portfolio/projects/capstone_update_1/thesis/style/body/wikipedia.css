@@ -1,0 +1,57 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px; padding:0px; font-family: sans-serif; font-size:13px; background:#f6f6f6; }
+h1, h2, h3{  }
+h1, h2{ border-bottom: 1px solid #AAAAAA; margin:0px 0px 2px 0px; padding:0px; }
+h1{ font-size:26px; }
+h2{ font-size:20px; }
+h3{  }
+p{ line-height:16px; margin:6px 0px 8px 0px; }
+a{ color:#0645AD; text-decoration:none; }
+a:link{  }
+a:visited{ }
+a:hover{ text-decoration:underline; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{ height:40px; padding-top:40px; display:block; background:white; }
+#header #headerInner{ height:40px; display:block;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+	background: -moz-linear-gradient(top , #ffffff, #f6f6f6);
+}
+
+
+
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ clear:both; }
+#body a{ }
+
+
+
+/****** Content ******/
+#body #content{ display:block; margin-left:180px; padding:16px; background:white; border-left:1px solid #a7d7f9; border-bottom:1px solid #a7d7f9; overflow:hidden; }
+
+
+
+
+
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ clear:both; background:#f9f9f9; margin-left:180px; padding:12px; font-size:11px; }
+
+

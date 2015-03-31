@@ -1,0 +1,9 @@
+/****** Search ******/
+#header #search{ width:245px; display:inline-block; float:left; border:0px solid blue; }
+#header #search input{ width:180px; padding:6px;
+	border-radius:4px 0px 0px 4px; -mox-border-radius:4px 0px 0px 4px; border:0px solid green;
+}
+#header #search #searchBtn{ width:45px; padding:4px 4px 8px 1px; 
+	border-radius:0px 4px 4px 0px; -moz-border-radius:0px 4px 4px 0px; border:0px solid red;
+}
+#header #search input, #header #search #searchBtn{ display:inline-block; float:left; height:16px; background:#666; margin-top:6px; color:#CCCCCC; }

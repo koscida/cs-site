@@ -1,0 +1,65 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+	<title>Brittany Kos Portfolio</title> 
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="960.css" media="screen" title="Default" /> 
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" /> 
+	
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script type="text/javascript" src="projectscript.js"></script> 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script language="JavaScript">
+		Image1= new Image(350,350)
+		Image1.src = "images/project_be_main.png"
+	</script>
+	
+</head>
+<body>
+<div id="wrapper">
+<div class="container">
+
+	<div id="header">
+		<script>header();</script>
+	</div>
+	
+	<div id="navigation">
+		<script>navigation("Projects");</script>
+	</div>
+	
+	<div id="gallery">
+		<script>projectGallery(0);</script>
+	</div>
+	
+	<div id="body">
+		<div id="name"><h2>Beyond Existence</h2></div>
+		
+		<div id="images" class="pic">
+			<img src="images/project_be_main.png" width="350" height="350"/>
+		</div>
+		
+		<div id="description">
+			<p>This is a game I'm working on for the ATLS 4591 class.  We are developing an 
+			XBOX game with <a href="http://www.microsoft.com/visualstudio/en-us" onclick="window.open(this.href); return false;">Visual 
+			Studios</a> and the <a href="http://en.wikipedia.org/wiki/Microsoft_XNA" onclick="window.open(this.href); return false;">XNA</a>
+			 game environment.  We are in the beginning stages of development now and will 
+			 continue development through the spring semester.</p>
+			
+			<p>There is a total of 11 students working on the project, with a few external 
+			artists.  My responsibilities include UI development and general programming.</p>
+			
+			<p>Fall 2011 &ndash; Spring 2012</p>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="footer">
+		<script>footer();</script>
+	</div>
+	
+</div>
+</div>
+</body>
+</head>

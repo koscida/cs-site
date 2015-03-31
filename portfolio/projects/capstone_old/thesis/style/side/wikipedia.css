@@ -1,0 +1,7 @@
+/****** Sidebar ******/
+#body #sideBar{ display:block; position:absolute; width:160px; top:80px; padding:16px 9px 10px 11px; font-size:12px; background:#f6f6f6; overflow:hidden; }
+#body #sideBar ul{ list-style-type:none; padding:0px; }
+#body #sideBar ul li{ padding:4px; }
+#body #sideBar ul li a{  }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{  }

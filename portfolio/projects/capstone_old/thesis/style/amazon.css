@@ -1,0 +1,99 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px 8px 8px 8px; padding:0px; color: #000000; font-family: Verdana,Arial,"Helvetica Neue",Helvetica,sans-serif; font-size:12px; }
+h1, h2, h3{  }
+h1{ color:#ff9608; font-size:20px; }
+h1, h2{ padding:0px 0px 2px 0px; margin:0px 0px 5px 0px; border-bottom:1px solid #DDDDDD; }
+h2{ color:#E47911; font-size:16px; }
+h3{  }
+p{  }
+a{ color:#004B91; text-decoration:underline; }
+a:link{  }
+a:visited{ }
+a:hover{ color:#e49711; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{  }
+
+/****** Logo ******/
+#header #logo{ position:absolute; top:20px; height:72px; width:180px; margin-left:15px; }
+#header #logo #logoImg{ width:118px; height:48px; background:url('../images/amazon_logo.png') no-repeat; }
+
+/****** Search ******/
+#header #search{ width:99%; background:#146eb4; position:absolute; top:72px; padding:8px 0px; border-bottom:22px solid black; border-radius: 4px 4px 0px 0px; -moz-border-radius:4px 4px 0px 0px; }
+#header #search input{ width:60%; display:inline-block; float:left; margin:0px; margin-left:20%; padding:2px; border:0px; font-size:13px;}
+#header #search #searchBtn{ display:inline-block; float:left; padding:1px 2px; madding:0px; color:#E47911; background:white; font-size:15px; }
+
+/****** Header Navigation ******/
+/*#header #headerNavigation{ position:absolute; top:44px; margin-left:185px; }*/
+#header #headerNavigation{ display:inline-block; float:right; margin:44px 10px 0px 0px; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; margin:0px; }
+#header #headerNavigation ul li{ display:inline-block; }
+#header #headerNavigation ul li a{ display:block; padding:2px 9px; font-weight:bold; font-size:12px; border-left:1px solid #ADC2D6; text-decoration:none; }
+#header #headerNavigation ul li a:hover{ text-decoration:underline; color:#004B91; }
+#header #headerNavigation ul li a.here{  }
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ clear:both; overflow:hidden; }
+#body a{ }
+
+/****** Sidebar ******/
+#body #sideBar{ position:absolute; top:108px; border-left:3px solid #146eb4; border-bottom:2px solid #146eb4; border-bottom-left-radius:4px; -moz-border-radius-bottomleft:4px; }
+#body #sideBar ul{ list-style-type:none; padding:0px; margin:0px; }
+#body #sideBar ul li{ width:185px; display:block; background:#edf7ff; margin-bottom:-1px; border:1px solid #83abc6; }
+#body #sideBar ul li a{ display:block; padding-left:8px; line-height:25px; color:black; font-weight:bold; font-size:12px; font-family: Arial,sans-serif; text-decoration:none; }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{ border:0px solid white; color:white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5b25d), to(#cb8435));
+	background: -moz-linear-gradient(top , #f5b25d, #cb8435);
+}
+
+/****** Content ******/
+#body #content{ width:65%; position:absolute; top:140px; margin-left:206px; display:block; }
+
+/****** Content Text ******/
+#body #content #text{  }
+#body #content p{  }
+
+/****** Content Elements ******/
+#body #content #picElements{ display:block; }
+#body #content #picElements .element{ display:inline-block; float:left; width:160px; margin:2px 7px; }
+#body #content #picElements .element img{ height:135px; width:135px; }
+#body #content #picElements .element p{ color:#004B91; }
+
+/****** Ad Bar ******/
+#body #adBar{ display:inline-block; width:300px; float:right; margin-top:106px; }
+#body #adBar #adBarImg{ width:160px; height:600px; display:block; margin:0px auto; background:url('../images/ad1.png') no-repeat; }
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ display:block; padding-top:60px; overflow:hidden; }
+#footerInner{ clear:both; display:block; overflow:hidden; }
+
+/****** Navigation ******/
+#footer #footerNavigation{ clear:both; display:block; margin:0px auto; height:200px; overflow:hidden; width:1000px; }
+#footer #footerNavigation ul{ list-style-type:none; margin:30px 0px 0px 0px; padding:0px; }
+#footer #footerNavigation ul li{ display:inline-block; float:left; margin:0px 20px; width:140px; }
+#footer #footerNavigation ul li h2{ display:none; }
+#footer #footerNavigation ul li ul{ margin:0px; display:block; list-style-type:none; padding:0px; }
+#footer #footerNavigation ul li ul li{ display:block; margin:0px 0px 8px 0px; }
+#footer #footerNavigation ul li ul li a{ text-decoration:none; }
+
+
+/****** Copyright ******/
+#footer #copyright{ clear:both; margin:20px auto 14px auto; }
+#footer #copyright p{ color: #999999; text-align:center; }

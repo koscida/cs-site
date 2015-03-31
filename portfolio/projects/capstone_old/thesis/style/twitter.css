@@ -1,0 +1,114 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px; padding:0px; color:#333; height:100%;
+	font:13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+	background:#c0deed;
+	background: webkit-gradient(linear, left top, left bottom, from(#8ec1da), to(#c0deed));
+	background: -moz-linear-gradient(top , #8ec1da, #c0deed);
+}
+h1, h2, h3{  }
+h1{ color:#999; font:bold 18px Helvetica Neue,Helvetica,sans-serif; margin:0px 0px 6px 0px; }
+h2{  }
+h3{  }
+p{  }
+a{ color:#2D76B9; text-decoration:none; }
+a:link{  }
+a:visited{ }
+a:hover{ text-decoration:underline; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{ width:100%; /*overflow:hidden;*/ height:40px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111));
+	background: -moz-linear-gradient(top , #333333, #111111);
+}
+#headerInner{ width:1000px; margin:0px auto; }
+
+/****** Logo ******/
+#header #logo{ display:inline-block; float:left; width:145px; }
+#header #logo #logoImg{ width:98px; height:40px; margin:0px auto; background:url('../images/twitter_logo.png') no-repeat; }
+
+/****** Search ******/
+#header #search{ width:245px; display:inline-block; float:left; border:0px solid blue; }
+#header #search input{ width:180px; padding:6px;
+	border-radius:4px 0px 0px 4px; -mox-border-radius:4px 0px 0px 4px; border:0px solid green;
+}
+#header #search #searchBtn{ width:45px; padding:4px 4px 8px 1px; 
+	border-radius:0px 4px 4px 0px; -moz-border-radius:0px 4px 4px 0px; border:0px solid red;
+}
+#header #search input, #header #search #searchBtn{ display:inline-block; float:left; height:16px; background:#666; margin-top:6px; color:#CCCCCC; }
+
+
+/****** Header Navigation ******/
+#header #headerNavigation{ display:inline-block; float:left; margin-left:8px; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; margin:0px; }
+#header #headerNavigation ul li{ display:inline-block; float:left; }
+#header #headerNavigation ul li a{ display:block; text-decoration:none; color:#bababa; padding:10px; }
+#header #headerNavigation ul li a:hover{ color:#fff; }
+#header #headerNavigation ul li a.here{ color:#fff; font-weight:bold; background:black; }
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ width:960px; margin:20px auto 0px auto; }
+#body a{ }
+
+/****** Sidebar ******/
+#body #sideBar{ display:inline-block; float:right; width:385px; margin-left:-5px; padding:12px 20px; overflow:hidden; background:#dbedf5; border-radius:0px 5px 5px 0px; -moz-border-radius:0px 5px 5px 0px; }
+#body #sideBar ul{  }
+#body #sideBar ul li{ list-style:disc inside none; margin-left:3px; padding:5px 0px; }
+#body #sideBar ul li a{ border-bottom:1px solid #EBEBEB; color:#0084B4; }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{  }
+
+
+/****** Content ******/
+#body #content{ width:540px; display:inline-block; float:left; overflow:hidden; background:#fff; box-shadow:0 3px 4px rgba(0, 0, 0, 0.5); border-radius:4px; -moz-border-radius:4px; }
+
+/****** Content Text ******/
+#body #content #text{ background:#f5f5f5; padding:15px 20px; }
+#body #content p{ display:none; }
+#body #content h2{ display:none; }
+
+
+/****** Content Elements ******/
+#body #content #picElements{ font-size:15px; color:#444; }
+#body #content #picElements .element{ padding:10px 15px; display:block; overflow:hidden; border-bottom: 1px solid #EBEBEB; }
+#body #content #picElements .element.here{ background:#e5f2f7; }
+#body #content #picElements .element img{ width:48px; height:48px; margin-top:3px; display:inline-block; float:left; }
+#body #content #picElements .element p{ margin-left:10px; display:inline-block; float:left; }
+
+/****** Ad Bar ******/
+#body #adBar{ display:none; }
+#body #adBar #adBarImg{ width:160px; height:600px; background:url('../images/adImg.png') no-repeat; }
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ clear:both; display:none; }
+
+/****** Navigation ******/
+#footer #footerNavigation{  }
+#footer #footerNavigation ul{  }
+#footer #footerNavigation ul li{  }
+#footer #footerNavigation ul li h2{  }
+#footer #footerNavigation ul li h2 a{  }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{  }
+#footer #footerNavigation ul li ul li{  }
+#footer #footerNavigation ul li ul li a{  }
+
+
+/****** Copyright ******/
+#footer #copyright{  }
+#footer #copyright p{  }

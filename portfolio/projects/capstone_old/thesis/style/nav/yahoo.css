@@ -1,0 +1,7 @@
+/****** Header Navigation ******/
+#header #headerNavigation{ clear:both; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; width:701px; margin-left:260px; }
+#header #headerNavigation ul li{ display:inline-block; margin:6px 7px 0px 7px; }
+#header #headerNavigation ul li a{ color: #8496B9; text-decoration:none; }
+#header #headerNavigation ul li a:hover{  }
+#header #headerNavigation ul li a.here{ color:black; font-weight:bold; }

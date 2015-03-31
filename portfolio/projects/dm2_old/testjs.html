@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+
+var _nav_ele = new Array(6);  //array[6][2]
+_nav_ele[0] = new Array(2);
+	_nav_ele[0][0] = "Home";
+	_nav_ele[0][1] = "0";
+_nav_ele[1] = new Array(2);
+	_nav_ele[1][0] = "Labs";
+	_nav_ele[1][1] = "10";
+_nav_ele[2] = new Array(2);
+	_nav_ele[2][0] = "Projects";
+	_nav_ele[2][1] = 3;
+_nav_ele[3] = new Array(2);
+	_nav_ele[3][0] = "Team Project";
+	_nav_ele[3][1] = "0";
+_nav_ele[4] = new Array(2);
+	_nav_ele[4][0] = "Javascript";
+	_nav_ele[4][1] = "0";
+_nav_ele[5] = new Array(2);
+	_nav_ele[5][0] = "Extras";
+	_nav_ele[5][1] = "0";
+
+function header()
+{
+	var i;
+	//document.write(_nav_ele[2][1]);
+	var subele;
+	subele = (_nav_ele[2][1]);
+	//document.write(subele);
+	for(var i=0; i<subele; i++)
+	{
+		document.write(" a ");
+		
+	}
+}
+
+</script>
+</head>
+
+<body>
+	<div id="header">
+		something
+		<script>
+			header();
+		</script>
+	<div id="header">
+</body>
+</html>

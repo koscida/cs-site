@@ -1,0 +1,13 @@
+/****** Search ******/
+#header #search{ display:inline-block; float:right; overflow:hidden; padding:4px 4px 5px 4px; width:695px;
+	border-top:1px solid #eff2f4; border-right:1px solid #dbdee0; border-left:1px solid #d7dadd; border-left:1px solid #a4b5b8; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#feffff), to(#a9b7bb));
+	background: -moz-linear-gradient(top,  #feffff,  #a9b7bb);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#a9b7bb');
+}
+#header #search input{ display:inline-block; float:left; width:471px; height:29px; background-color: #FFFEE7; padding:5px 4px 0px 3px; }
+#header #search #searchBtn{ display:inline-block; float:left; width:208px; height:29px; margin-left:3px; padding-top:7px; border:1px solid #dd9715; text-align:center; font-weight:bold; font-size:16px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff8ae), to(#fdc82f));
+	background: -moz-linear-gradient(top,  #fff8ae,  #fdc82f);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8ae', endColorstr='#fdc82f');
+}

@@ -1,0 +1,257 @@
+body{
+	background-color:#ddd;
+}
+#sun{
+	height:600px;
+	margin: -10px -5px 0px -10px;
+	background-image:url('image/hugesun2.png');
+	background-repeat:no-repeat;
+}
+#container{
+	background-color:#f0f0f0;
+	width:900px;
+	margin:-580px auto 5px auto;
+	padding:10px 0px 10px 0px;
+	/*border-style:outset;*/
+	border-top: 2px solid #fff;
+	border-right:4px solid #ccc;
+	border-bottom:4px solid #aaa;
+	border-left:2px solid #ccc;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+
+/*************************** navigation and logo ******************************/
+#title{
+	margin:0px 30px 0px 30px;
+	padding:0px;
+	border-bottom:1px solid black;
+}
+#logo{
+	border:0px solid yellow;
+	width:230px;
+}
+#navigation{
+	text-align:center;
+	float:right;
+	margin:45px -2px 0px 0px;
+	padding:0px;
+	border:0px solid green;
+}
+a.logo:link,a.logo:visited,a.logo:hover,a.logo:active{
+	font-size: 1px;
+	color: #FFF;
+	left: -999em;
+}
+
+ul.navigation li{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	margin-left: auto;
+	margin-right: auto;
+	float:right;
+	display:inline;
+}
+ul.navigation li ul.nav2 li{
+	margin:0px;
+	list-style:none;
+	display:none; 
+	background-image:url('image/orange.png');  
+}
+a.navigation:link,a.navigation:visited{
+	background-image:url('image/orange.png');
+	display:block;
+	padding:3px 25px 2px;
+	margin:0px 2px 0px 2px;
+	color:#555;
+	font-size:19px;
+	text-align:center;
+	font-family:"times","georgia";
+	text-decoration:none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+a.navigation:hover,a.nagivation:active{
+	/*background-color:#13ac79;*/
+	background-image:url('image/oranger.png');
+	color:#333;
+}
+
+/********************************* changing front picture *************************/
+#frontpic{
+	float:right;
+	margin:5px 30px 10px 0px;
+	clear:both;
+	border:0px solid red;
+	height:300px;
+	width:553px;
+	overflow:hidden;
+}
+#pictures {
+	padding: 0px;
+	float: left;
+	margin-right: 3px;
+	overflow: hidden;
+	width:100px;
+}
+.pic{
+	padding-bottom:3px;
+	margin-bottom:-4px;
+	overflow:hidden;
+}
+#currentpic{
+	height:300px;
+	width:450px;
+	overflow:hidden;
+	float:right;
+}
+/******************************** information *********************************/
+#information{
+	text-align:left;
+	font-size:14px;
+	font-family:"times","georgia";
+	margin:5px 10px 10px 30px;
+	overflow:hidden;
+	border:0px solid red;
+}
+/***************************************** about lcd *******************************/
+#about{
+	border:0px solid red;
+	clear:both;
+	margin:10px 0px 0px 0px;
+	text-align:left;
+	font-size:14px;
+	font-family:"times","georgia";
+	text-decoration:none;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+/********************************** current events section ***********************/
+#currentevents{
+	clear:both;
+	border:0px solid green;
+}
+#publications{
+	display:block;
+	margin:10px 30px;
+	padding-bottom:10px;
+	width:260px;
+	border:0px solid red;
+}
+#research{
+	float:right;
+	display:block;
+	margin:0px 0px;
+	padding-bottom:10px;
+	width:260px;
+	border:0px solid red;
+}
+#news{
+	float:right;
+	display:block;
+	margin:0px 30px;
+	padding-bottom:10px;
+	width:260px;
+	border:0px solid red;
+}
+.eventsheader{
+	background-image:url('image/orange.png');
+	background-image:repeat-x;
+	padding:3px 10px;
+	color:#505050;
+	font-size:20px;
+	font-family:"times","georgia";
+	text-align:center;
+	text-decoration:none;
+}
+.event{
+	border:3px solid #d0d0d0;
+	padding:3px;
+	margin:2px 0px;
+	color:#707070;
+	font-size:14px;
+	font-family:"times","georgia";
+	text-align:left;
+	text-decoration:none;	
+}
+
+/*********************************** about section *******************************/
+#largetext{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:5px 20px;
+}
+h1{
+	font-size:30px;
+	font-family:"georgia";
+	font-weight:bold;
+	text-decoration:none;
+	color:#13ac79;
+	text-align:left;
+}
+h2{
+	font-size:20px;
+	font-family:"georgia";
+	font-weight:bold;
+	text-decoration:none;
+	color:#13ac79;
+	text-align:left;
+	text-indent:20px;
+	display:inline;
+}
+p{
+	font-size:12px;
+	font-family:"georgia";
+	text-decoration:none;
+	color:#707070;
+	text-align:left;
+	text-indent:25px;
+}
+#researchlist{
+	clear:both;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#researchleft{
+	float:left;
+	width:350px;
+	margin:0px auto 15px 0px;
+	border:0px solid red;
+	padding-bottom:15px;
+}
+#researchright{
+	width:350px;
+	margin:0px 15px 15px auto;
+	border:0px solid red;
+	padding-bottom:15px;
+}
+
+
+/******************************** logos ********************************************/
+p.logo{
+	font-size: 1px;
+	color: #FFF;
+	left: -999px;	
+}
+#logos{
+	margin:-500px auto 10px auto;
+	width:900px;
+	text-align:center;
+	margin-top:0px;
+	padding:10px;
+	clear:both;
+}
+.individuallogo{
+	border-right:1px solid black;
+	display:inline;
+	margin-right:10px;
+	padding-right:2px;
+	height:54px;
+	clear:both;
+}
+

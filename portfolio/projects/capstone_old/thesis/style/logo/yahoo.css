@@ -1,0 +1,3 @@
+/****** Logo ******/
+#header #logo{ display:inline-block; float:left; }
+#header #logo #logoImg{ width:135px; height:50px; background:url('../../images/yahoo_logo.png') no-repeat; }

@@ -1,0 +1,192 @@
+/*
+	66cf96 - green
+	444444 - dark grey (text)
+	666666 - med grey (text and shadows)
+	A5A5A5 - text
+	e8e8e8 - super light grey (borders)
+	
+	http://themeforest.net/theme_previews/3254245-black-green?index=7
+*/
+body {
+	font-family: Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 19px;
+	color: #444444;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4 { margin: 0; }
+h1 {
+	font-size: 40px;
+	font-weight: normal;
+	margin: 20px 0;
+}
+h2 {
+	font-size: 20px;
+	line-height: 28px;
+}
+h3 {
+	margin: 10px 0;
+	font-weight: normal;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+h4 {
+	margin: 10px 0;
+	font-size: 13px;
+}
+p { 
+	margin: 0; 
+	color: #444444;
+}
+a {
+	color: #66cf96;
+	text-decoration: none;
+}
+a:hover { text-decoratin: underline; }
+
+.btnSmall, .btn, .btnLarge {
+	padding: 4px 10px;
+	background: #66cf96;
+	font-size: 16px;
+	color: white;
+	border: 0;
+	box-shadow: inset 0 0 5px #46af76;
+}
+.btnLarge { padding: 12px 30px; }
+.ntmSmall:hover, .btn:hover, .btnLarge:hover {
+	background: #56bf86;
+	box-shadow: inset 0 0 5px #369f66;
+}
+
+.clear { clear: both; }
+.halfSpace { height: 10px; }
+.left { float: left; }
+.right { float: right; }
+.border { border-bottom: 1px solid #e8e8e8; }
+
+
+/* ************************ */
+/*			header			*/
+/* ************************ */
+.headerTop {
+	background: #444;
+	height: 10px;
+}
+header .container {
+	border-bottom: 1px solid #e8e8e8;
+	overflow: hidden;
+}
+.title {
+	display: inline-block;
+	margin-top: 30px;
+}
+.title img {
+	width: 300px;
+	height: 30px;
+}
+.navigation {
+	display: inline-block;
+	float: right;
+}
+.navPage {
+	display: inline-block;
+	float: left;
+}
+.navPage a { 
+	display: block;
+	height: 90px;
+	width: 120px;
+	line-height: 90px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #444;
+}
+.navPage a:hover {
+	text-decoration: underline;
+}
+.navPage.here {
+	box-shadow: 0 0 3px 1px #ccc;
+}
+.navPage.here a {
+	background: #66cf96;
+	color: white;
+	
+}
+
+
+
+
+
+/* ************************ */
+/*			footer			*/
+/* ************************ */
+footer {
+	background: #444;
+}
+.footerTop {
+	height: 10px;
+	background: #66cf96;
+}
+.webmaster {
+	background: #222;
+	padding: 20px 0;
+}
+
+
+
+
+
+
+
+/* ************************ */
+/*			home			*/
+/* ************************ */
+.aboutTitle {
+	
+}
+.about {
+	
+}
+.aboutImage {
+	width: 100%;
+	height: 250px;
+}
+.about p {
+}
+
+
+
+
+
+/* ************************ */
+/*			posts			*/
+/* ************************ */
+.post {
+
+}
+.post .date {
+	height: 55px;
+	background: #66cf96;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+}
+.post .date span {
+	font-size: 40px;
+	line-height: 40px;
+	display: block;
+}
+.post h2 {
+	margin-bottom: 10px;
+}
+.post form {
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 10px;
+	overflow: hidden;
+}
+
+
+

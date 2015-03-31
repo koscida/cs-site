@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+/****************************
+		Column 1
+****************************/
+.webscanThumWide{
+	background-image: url(../images/webscan_thum_bw.jpg);
+}
+.skiThumWide{
+	background-image: url(../images/ski_thum_bw.jpg);
+}
+.dm2ThumWide{
+	background-image: url(../images/dm2_thum_bw.jpg);
+}
+
+/****************************
+		Column 2
+****************************/
+.forumThumWide{
+	background-image: url(../images/forum_thum_bw.jpg);
+}
+.beThumWide{
+	background-image: url(../images/be_thum_bw.jpg);
+}
+.capstoneThumWide{
+	background-image: url(../images/capstone_thum_bw.jpg);
+}
+.cselThumWide{
+	background-image: url(../images/csel_thum_bw.jpg);
+}
+
+/****************************
+		Column 3
+****************************/
+.checklistThumWide{
+	background-image: url(../images/checklist_thum_bw.jpg);
+}
+.hotspotsThumWide{
+	background-image: url(../images/hotspots_thum_bw.jpg);
+}
+.dm1ThumWide{
+	background-image: url(../images/dm1_thum_bw.jpg);
+}
+
+/****************************
+		Column 4
+****************************/
+.orientationThumWide{
+	background-image: url(../images/orientation_thum_bw.jpg);
+}
+.magicmailboxThumWide{
+	background-image: url(../images/magicmailbox_thum_bw.jpg);
+}
+.tamThumWide{
+	background-image: url(../images/tam_thum_bw.jpg);
+}
+.lcdThumWide{
+	background-image: url(../images/lcd_thum_bw.jpg);
+}

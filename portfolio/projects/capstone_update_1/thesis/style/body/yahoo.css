@@ -1,0 +1,60 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ padding:0px; margin:0px; font: 13px/1.231 arial,helvetica,clean,sans-serif; background:#dce2e7; }
+h1, h2, h3{ color:#16387C; }
+h1, h2{ padding:3px 0px 5px 0px; margin:0px; }
+h2{  }
+h3{  }
+p{ padding:0px; margin:0px; }
+a{ color:#16387C; text-decoration:none; }
+a:link{  }
+a:visited{ }
+a:hover{ text-decoration:underline; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{ display:block; padding-top:15px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#dce2e7));
+	background: -moz-linear-gradient(top,  #fcfdfd,  #dce2e7);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfdfd', endColorstr='#dce2e7');
+}
+#header #headerInner{ width:972px; margin:0px auto; }
+
+
+
+
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ width:972px; margin:39px auto 0px auto; padding:15px 0px; clear:both; overflow:hidden; background:white; border:1px solid #B9C7D3; border-radius:0px 0px 5px 5px; -mox-border-radius:0px 0px 5px 5px; }
+#body a{ }
+
+
+
+/****** Content ******/
+#body #content{ display:inline-block; width:470px;z }
+
+#body #content p{  }
+
+
+
+
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ width:952px; display:block; margin:13px auto 6px auto; padding:8px 10px; background:#f4f7f8; border-radius:5px; -mox-border-radius:5px; }
+
+
+

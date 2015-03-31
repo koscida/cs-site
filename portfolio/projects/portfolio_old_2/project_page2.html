@@ -1,0 +1,70 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+	<title>Brittany Kos Portfolio</title> 
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="960.css" media="screen" title="Default" /> 
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" /> 
+	
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script type="text/javascript" src="projectscript.js"></script> 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script language="JavaScript">
+		Image1= new Image(550,476)
+		Image1.src = "images/project_hotspots_main.png"
+	</script>
+	
+</head>
+<body>
+<div id="wrapper">
+<div class="container">
+
+	<div id="header">
+		<script>header();</script>
+	</div>
+	
+	<div id="navigation">
+		<script>navigation("Projects");</script>
+	</div>
+	
+	<div id="gallery">
+		<script>projectGallery(2);</script>
+	</div>
+	
+	<div id="body">
+		<div id="name"><h2>Hotspots</h2></div>
+		
+		<div id="images" class="site">
+			<a href="http://redwood.colorado.edu/coerh/dm2/home.php" onclick="window.open(this.href); return false;"><img src="images/project_hotspots_main.png" width="550" height="476"/></a>
+		</div>
+		
+		<div id="description">
+			<p>This was a team project I did for the ATLS 3020: Digital Media 2 class. It is 
+			written in PHP and uses a MySQL database.  I worked in a team of 3 where I was the 
+			primary software developer.</p>
+			
+			<p>Hotspots is an online roadtrip planner and vacation resource. My team and I 
+			researched different 'Hotspots' or vacation spots around the Western US and populated 
+			a database with the information.  We built the website around this data and allowed 
+			users to create accounts and comment on the hotspots.  We then build a roadtrip planner 
+			that had the capibility to add different hotsopts and map out the trip.</p>
+			
+			<p>All write-ups can be found<a href="http://redwood.colorado.edu/kosba/dm2/teamproject.html" onclick="window.open(this.href); return false;">
+			here</a> and the original project <a href="http://redwood.colorado.edu/coerh/dm2/home.php" onclick="window.open(this.href); return false;">
+			here</a>.</p>
+			
+			<p>Spring 2011</p>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="footer">
+		<script>footer();</script>
+	</div>
+	
+</div>
+</div>
+</body>
+</head>

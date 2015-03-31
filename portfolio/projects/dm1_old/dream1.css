@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-color: #F5F6F0;
+	color: #618A2A;
+}
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: normal;
+	font-size: 36px;
+	color: #16565F;
+	display: inline;
+}

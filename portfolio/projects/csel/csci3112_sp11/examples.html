@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+	<title>Brittany Kos's CS Page</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../960.css" media="screen" title="Default" />
+	<link rel="stylesheet" type="text/css" href="../indexstyle.css" media="screen" title="Default" />
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" />
+	<script type="text/javascript" src="../indexscript.js"></script>
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script type="text/javascript" src="../jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="../jquery.validate.js"></script>
+	
+	<style>
+		#block{
+			width:100px;
+			height:100px;
+			margin:5px;
+			display:inline-block;
+			float:left;
+			background:#ecc960;
+		}
+		#block p{
+			font-size:70px;
+			margin:8px 0px 0px 15px;
+			text-align:center;
+		}
+		
+		
+		.but1{
+			width:70px;padding:10px;border-radius:10px;	-moz-border-radius:10px;
+		}
+		.but2{
+			width:70px;padding:10px;border-radius:10px;-moz-border-radius:10px;border:1px solid black;
+		}
+		
+		
+		#information label{
+			width:80px;
+			margin:2px;
+			display:inline-block;
+		}
+		#information input{
+			width:120px;
+			margin:2px;
+			display:inline-block;
+		}
+		#information .error{
+			color:red;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		function addBlocksDisplay()
+		{
+			var num = document.addBlocks.list.value;
+			while (document.getElementById('blocksDiv').hasChildNodes())
+			{
+				document.getElementById('blocksDiv').removeChild(document.getElementById('blocksDiv').lastChild);
+			}
+			for(var i=0;i<num;i++)
+			{
+				var newDiv = document.createElement('div');
+				newDiv.id = 'block';
+				newDiv.innerHTML = '<p>'+(i+1)+'</p>';
+				document.getElementById('blocksDiv').appendChild(newDiv);
+			}
+		}
+		
+		
+		function buttonover(id)
+		{
+			document.getElementById(id).setAttribute("class", "but2");
+		}
+		function buttonout(id)
+		{
+			document.getElementById(id).setAttribute("class", "but1");
+		}
+		
+		
+		function loadXMLDoc()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("GET","ajax_info.txt",false);
+			xmlhttp.send();
+			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+		}
+	</script>
+</head> 
+
+
+<body> 
+<div id="container">
+
+	<div id="header">
+		<script>header2();</script>
+	</div>
+	
+	<div class="pageTitleLeft grid_2 left" style="border:0px solid red;height:300px; width:82px;">
+		<script>subNavigation();</script>
+	</div>
+	
+	<div class="noMargin" style="width:840px;display:inline-block;">
+		<div class="grid_10 center color round">
+				<h1>Weekly Examples</h1>
+		</div>
+		
+		
+		<div class="grid_10 center color round" id="w8">
+				<h3><a>Week 8 :: Feb 14 :: AJAX Tutorial</a></h3>
+		</div>
+		<div id="week8" style="display:none;">
+			<div class="grid_6 centerOnly color round">
+					<h3>Change Text Example</h3>
+					<div id="myDiv"><p>Let AJAX change this text</p></div>
+					<button type="button" onclick="loadXMLDoc()">Change Content</button>
+			</div>
+		</div>
+	
+	
+		<div class="grid_10 center color round" id="w6">
+				<h3><a>Week 6 :: Feb 14 :: jQuery Libraries</a></h3>
+		</div>
+		<div id="week6" style="display:none;">
+			<div class="grid_6 centerOnly color round">
+					<h3>Validate Forms</h3>
+					
+					<form id="information" >
+						<label for="name" >Name: </label><input type="text" id="name" class="required" /><br/>
+						<label for="email" >Email: </label><input type="text" id="email" class="email" /><br/>
+						<label for="phone" >Phone: </label><input type="text" id="phone" class="phoneNumber" /><br/>
+						<br/>
+						<label></label><input type="submit" value="Submit"/>
+					</form>
+					<script>
+						//$validator.setDefaults();
+						$("#information").validate();
+					</script>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="grid_10 center color round" id="w5">
+				<h3><a>Week 5 :: Feb 7 :: jQuery Tutorials</a></h3>
+		</div>
+		<div id="week5" style="display:none;">
+			<div class="grid_6 centerOnly color round">
+					<h3>Slide Example</h3>
+					
+					<script>
+					$(document).ready(function(){
+						$("input.slideTextDown").click(function(){ $("div.slideTextDiv").find("p.slideParagraph:hidden").slideDown("slow"); });
+						$("input.slideTextUp").click(function(){ $("div.slideTextDiv").find("p.slideParagraph:visible").slideUp("fast"); });
+					});
+					</script>
+					
+					<div class="grid3">
+						<input type="button" value="Delete" class="slideTextUp but1" id="1" onmouseover="buttonover('1');" onmouseout="buttonout('1');"/> 
+						<input type="button" value="Add" class="slideTextDown but1" id="2" onmouseover="buttonover('2');" onmouseout="buttonout('2');"/> 
+					</div>
+					
+					<div class="grid5 slideTextDiv">
+						<p class="slideParagraph normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis volutpat metus, id rutrum mi dictum non. Aliquam eu malesuada risus. Pellentesque sed dolor ac lectus luctus interdum. In sollicitudin mi id sem viverra viverra. </p> 
+					</div>
+			</div>
+			
+			<div class="grid_6 centerOnly color round">
+					<h3>Add Text Example</h3>
+					
+					<script>
+						$(document).ready(function(){
+							$("input.deleteText").click(function(){ 
+								$("div.addTextDiv").find("p").not(".alert").append("<strong class=\"addedtext\">This text was just added.&nbsp;&nbsp;</strong>")
+							});				
+							$("input.addText").click(function(){ 
+								$("strong.addedtext").remove(); 
+							});
+						});
+					</script>
+					
+					<div class="grid3">
+						<input type="button" value="Delete" class="addText but1" id="3" onmouseover="buttonover('3');" onmouseout="buttonout('3');"/> 
+						<input type="button" value="Add" class="deleteText but1" id="4" onmouseover="buttonover('4');" onmouseout="buttonout('4');"/> 
+					</div>
+					
+					<div class="grid5 addTextDiv">
+						<p class="normal"></p> 
+					</div>
+			</div>
+		
+			<div class="grid_6 centerOnly color round">
+					<h3>Style Text Example</h3>
+					
+					<script>
+						$(document).ready(function(){
+							$("input.addTextStyle").click(function(){
+								$("div.addTextStyle em").css({color:"#323285", fontWeight:"bold"});
+							});
+							$("input.deleteTextStyle").click(function(){
+								$("div.addTextStyle em").css({color:"#000", fontWeight:"normal"});
+							});
+						});
+					</script>
+					
+					<div class="grid3">
+						<input type="button" value="Add" class="addTextStyle but1" id="5" onmouseover="buttonover('5');" onmouseout="buttonout('5')" />
+						<input type="button" value="Delete" class="deleteTextStyle but1" id="6" onmouseover="buttonover('6');" onmouseout="buttonout('6')" />
+					</div>
+					
+					<div class="grid5 addTextStyle">
+						<p class="normal">Lorem ipsum <em>dolor</em> sit amet, consectetur adipiscing elit. Maecenas iaculis volutpat metus, id rutrum mi dictum non. Aliquam eu <em>malesuada</em> risus. Pellentesque sed dolor ac <em>lectus luctus</em> interdum. In sollicitudin mi id sem <em>viverra</em> viverra. </p> 
+					</div>
+			</div>
+
+			<div class="grid_6 centerOnly color round">
+					<h3>Style Paragraph Example</h3>
+					
+					<script>
+						$(document).ready(function(){
+							$("input.addParagraphStyle").click(function(){ $("p.styleParagraph").addClass("para"); });
+							$("input.deleteParagraphStyle").click(function(){ $("p.styleParagraph").removeClass("para"); });
+						});
+					</script>
+					
+					<style>
+						.para{ background:#5252a5; color:white;}
+					</style>
+					
+					<div class="grid3">
+						<input type="button" value="Add" class="addParagraphStyle but1" id="7" onmouseover="buttonover('7');" onmouseout="buttonout('7')" />
+						<input type="button" value="Delete" class="deleteParagraphStyle but1" id="8" onmouseover="buttonover('8');" onmouseout="buttonout('8')" />
+					</div>
+					
+					<div class="grid5 addParagraphStyle">
+						<p class="styleParagraph normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis volutpat metus, id rutrum mi dictum non. Aliquam eu malesuada risus. Pellentesque sed dolor ac lectus luctus interdum. In sollicitudin mi id sem viverra viverra. </p> 
+					</div>
+			</div>
+		</div>
+		
+		
+		<div class="grid_10 center color round" id="w3">
+				<h3><a>Week 3 :: Jan 24 :: Javascript</a></h3>
+		</div>
+		<div id="week3" style="display:none;">
+				<div class="grid_6 color centerOnly round">
+					<h3>Simple Example</h3><br/>
+					<script>document.write("Hello World");</script>
+				</div>
+							
+				<div class="grid_6 color centerOnly round">
+					<h3>Form Example</h3>
+					<form name="addBlocks" action="">
+						<select name="list">
+							<script>
+							var opt = '';
+							for (var i = 1; i<11; i++)
+							{
+								opt += '<option value="' + i + '"> ' + i + ' </option>';
+							}
+							document.write(opt);
+							</script>
+						</select>
+						<input type="button" value="Submit" onClick="addBlocksDisplay();" />
+					</form>
+					<div style="float:left" id="blocksDiv"></div>
+				</div>
+		</div>
+		
+		
+		<script>
+			$(document).ready(function(){
+				$("#w3").click(function () {
+					$("#week3").toggle("slow");
+				});
+				$("#w5").click(function () {
+					$("#week5").toggle("slow");
+				});
+				$("#w6").click(function () {
+					$("#week6").toggle("slow");
+				});
+				$("#w8").click(function () {
+					$("#week8").toggle("slow");
+				});
+			});
+		</script>
+	</div>
+	
+	<div id="footer" class="round">
+		<script>footer();</script>
+	</div>
+	
+</div> <!-- end container -->
+</body> 
+</html> 

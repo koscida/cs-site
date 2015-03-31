@@ -1,0 +1,8 @@
+/****** Header Navigation ******/
+/*#header #headerNavigation{ position:absolute; top:44px; margin-left:185px; }*/
+#header #headerNavigation{ display:inline-block; float:right; margin:44px 10px 0px 0px; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; margin:0px; }
+#header #headerNavigation ul li{ display:inline-block; }
+#header #headerNavigation ul li a{ display:block; padding:2px 9px; font-weight:bold; font-size:12px; border-left:1px solid #ADC2D6; text-decoration:none; }
+#header #headerNavigation ul li a:hover{ text-decoration:underline; color:#004B91; }
+#header #headerNavigation ul li a.here{  }

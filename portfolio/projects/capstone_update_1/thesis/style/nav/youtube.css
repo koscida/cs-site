@@ -1,0 +1,7 @@
+/****** Header Navigation ******/
+#header #headerNavigation{ display:inline-block; float:left; }
+#header #headerNavigation ul{ list-style-type:none; display:block; margin:0px 0px 0px -1px; padding:14px 0px; z-index:1; }
+#header #headerNavigation ul li{ display:inline-block; }
+#header #headerNavigation ul li a{ border-left:1px solid #ccc; padding:1px 10px; z-index:1; }
+#header #headerNavigation ul li a:visited{ color:#0033cc; }
+

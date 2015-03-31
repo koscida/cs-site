@@ -1,0 +1,8 @@
+/****** Header Navigation ******/
+#header #headerNavigation{ display:inline-block; float:left; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; margin:0px; }
+#header #headerNavigation ul li{ display:inline-block; float:left; }
+#header #headerNavigation ul li a{ display:block; padding:8px 6px 5px 6px; margin:10px -1px 0px 0px; border-bottom:1px solid #a7d7f9; border-left:1px solid #a7d7f9; border-right:1px solid #a7d7f9; }
+#header #headerNavigation ul li a:hover{  }
+#header #headerNavigation ul li a.here{ background:white; border-bottom:1px solid white; }
+

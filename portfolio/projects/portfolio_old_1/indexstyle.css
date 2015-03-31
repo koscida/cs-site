@@ -1,0 +1,208 @@
+body{
+	background-color:white;/*#7D7F9E;*/ /*#1d1f3e;*/
+	background-image:url("image/back1.png");
+	font-family:"courier";
+	color:#000;
+}
+img{
+	border:none;
+}
+a{
+	overflow:none;
+}
+
+/****************************************** container ***********************************************/
+#container{
+	text-align:center;
+	margin: 5px auto 30px auto;
+	padding:10px 0px 30px 0px;
+	width:960px;
+	border:0px solid black;
+	background:white;
+	overflow:hidden;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+#title{
+	width:692px;
+	height:80px;
+	margin:10px auto;
+	background-image:url('image/tamtitle.png');
+}
+/************************************elements************************************************************/
+.element{
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	float:right;
+	display:inline-block;
+	margin:0px 30px;
+	height:350px;
+	width:260px;
+	border:0px solid black;
+}
+.elepic{
+	text-align:center;
+	font-size:18px;
+	margin:5px 0px;
+	border:2px solid #3d3f5e;
+	padding:2px;
+	overflow:hidden;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+.actualpic{
+	margin:0px 0px -4px 0px;
+	overflow:hidden;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+/**************************************navigation*****************************************************/
+#navigation{
+	width:960px;
+	margin:10px auto 0px auto;
+	clear:both;
+}
+.navpic{
+	float:right;
+	overflow:hidden;
+	font-size:12px;
+	width:58px;
+	margin:5px 10px 0px 0px;
+}
+#name{
+	font-size:40px;
+	font-weight:bold;
+	text-align:left;
+	width:300px;
+	float:left;
+	display:inline-block;
+	padding:20px 0px 0px 40px;
+}
+/*********************************** different projects **********************************************/
+.project{
+	overflow:hidden;
+	clear:both;
+	padding:0px 20px 10px;
+	margin:40px auto -30px auto;
+	color:#3d3f5e;
+	
+	font-size:13px;
+	text-align:left;
+	text-transform:lowercase;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border:0px solid red;
+}
+.lefttext{
+	margin:0px 0px 0px 30px;
+	width:580px;
+	border:0px solid yellow;
+	text-align:right;
+}
+.rightpic{
+	margin:0px 30px 0px 0px;
+	float:right;
+	display:inline;
+	width:258px;
+	height:264px;
+	padding:0px 0px 0px 0px;
+	border:0px solid blue;
+}
+.leftpic{	
+	margin:0px 0px 0px 30px;
+	float:left;
+	display:inline;
+	width:258px;
+	height:264px;
+	padding:0px;
+	border:0px solid yellow;
+}
+.righttext{
+	margin:0px 30px 0px 0px;
+	width:580px;
+	float:right;
+	border:0px solid blue;
+}
+
+h1{
+	display:inline;
+	color:#333;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+}
+a.link:link,a.link:visited{
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+	text-transform:uppecase;
+	color:#a0a;
+}
+a.link:hover,a.link:active{
+	text-decoration:underline;
+}
+/************************************************about me ***********************************/
+#pic{
+	float:right;
+	margin:15px 15px 5px 5px;
+}
+#par1{
+	margin:35px 15px 0px 10px;
+	font-size:15px;
+	text-align:left;
+	border:0px solid red;
+}
+#par2{
+	margin:15px 15px 0px 25px;
+	font-size:15px;
+	text-align:left;
+	border:0px solid red;
+}
+#par3{
+	margin:15px 15px 15px 40px;
+	font-size:15px;
+	text-align:left;
+	border:0px solid red;
+}
+/**************************************** essay ********************************************/
+#writing{
+	margin:25px 2px 15px 2px;
+	padding:0px 20px 10px 20px;
+	font-size:15px;
+	text-align:left;
+	border:0px solid red;
+}
+/**************************************** resume text *******************************************/
+#text{
+	margin:0px 2px 15px 2px;
+	clear:both;
+	font-size:15px;
+	text-align:left;
+	border:0px solid red;
+}
+/****************************************** resume ************************************************/
+li.resume1{
+	list-style-type:none;
+	display:inline;
+}
+ul.resume2, li.resume2{
+	list-style-type:circle;
+}
+#downresume{
+	width:500px;
+	padding:10px;
+	text-align:center;
+	margin:10px auto 10px auto;
+	border:2px solid #3d3f5e;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;	
+}
+a.downresume:link, a.downresume:visited{
+	font-weight:bold;
+	font-size:24px;
+	text-decoration:none;
+}
+a.downresume:hover, a.downresume:active{
+	color:#444;
+]

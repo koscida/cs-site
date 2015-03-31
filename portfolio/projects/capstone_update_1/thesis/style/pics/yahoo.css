@@ -1,0 +1,12 @@
+/****** Content Elements ******/
+#body #content #picElements{ display:block; border:1px solid #B9C7D3; overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E8EDF0), to(#FCFCFD));
+	background-image: -moz-linear-gradient(center top , #E8EDF0, #FCFCFD);
+}
+#body #content #picElements .element{ display:inline-block; float:left; width:88px; padding:7px 1px 10px 1px; }
+#body #content #picElements .element img{ width:85px; height:34px; margin:5px 2px 2px 2px; }
+#body #content #picElements .element p{  }
+#body #content #picElements .element.here{ color:#fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#59728B), to(#2D4458));
+	background-image: -moz-linear-gradient(center top , #59728B, #2D4458);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Brittany Kos ~ DM 2</title>
+	<link href="dm2style.css" rel="stylesheet" type="text/css">
+	<link href="gamestyle.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		
+		
+	</style> 
+	
+	<script src="dm2script.js" type="text/javascript"></script>
+	<script src="gamescript.js" type="text/javascript"></script>
+	<script type="text/javascript"> 
+		function rotateSelectedShip(){rotateSelectedShipjs();}
+		function selectship1h(){selectship1hjs();} 
+		function selectship2h(){selectship2hjs();} 
+		function selectship3h(){selectship3hjs();} 
+		function selectship1v(){selectship1vjs();} 
+		function selectship2v(){selectship2vjs();} 
+		function selectship3v(){selectship3vjs();} 
+		function playerTurnSelect(i, j){playerTurnSelectjs(i, j);}
+		function computerTurn(){computerTurnjs();}
+		//function computerTurnSelect(i,j){computerTurnSelectjs(i, j);}
+		function gameOver(){gameOverjs();}
+	</script>
+</head>
+
+<body>
+
+<!-- header -->
+	<div id="header">
+		<script type="text/javascript">
+			header('header');
+		</script>
+	</div>
+		<div style="float:right;" id="displayGameArray">
+			
+		</div>
+<!-- content -->
+	<div id="content">
+		<div id="contentthing">
+		<div id="game">
+		
+	<!-- Title -->
+		<div id="gameTitle">
+			<h1>BattleShip</h1>
+		</div>
+		
+	<!-- Game Space -->
+		<div id="gameSpace">
+			<div id="computerBoard">
+			</div>
+			<div id="playerBoard">
+				<!--<div class="square">
+				</div>-->
+			</div>
+		</div>
+		
+	<!-- Dialogue -->
+		<div id="gameDialogue">
+			<div id="gameDisplay"></div>
+			<div id="computerTurnBox"><a href="#" onClick="computerTurn();if(gameOver()){return null;}">Computer Turn</a></div>
+		</div>
+		
+		
+	<!-- Run Script -->
+		<script type="text/javascript">		
+			start();
+			
+		</script>
+		
+		</div> <!-- end game div -->
+		
+		
+		</div> <!-- end contentthing -->
+    </div> <!-- end content -->
+	
+	
+	
+<!-- footer -->
+	<script type="text/javascript">
+		footer();
+	</script>
+	
+</body>
+</html>

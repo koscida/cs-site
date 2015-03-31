@@ -1,0 +1,108 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px; padding:0px; font-family: sans-serif; font-size:13px; background:#f6f6f6; }
+h1, h2, h3{  }
+h1, h2{ border-bottom: 1px solid #AAAAAA; margin:0px 0px 2px 0px; padding:0px; }
+h1{ font-size:26px; }
+h2{ font-size:20px; }
+h3{  }
+p{ line-height:16px; margin:6px 0px 8px 0px; }
+a{ color:#0645AD; text-decoration:none; }
+a:link{  }
+a:visited{ }
+a:hover{ text-decoration:underline; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{ height:40px; padding-top:40px; display:block; background:white; }
+#header #headerInner{ height:40px; display:block;
+	background: webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+	background: -moz-linear-gradient(top , #ffffff, #f6f6f6);
+}
+
+/****** Logo ******/
+#header #logo{ float:left; width:180px; display:inline-block; float:left; }
+#header #logo #logoImg{ width:160px; height:65px; margin:-30px 10px 0px 10px; background:url('../images/wikipedia_logo.png') no-repeat; }
+
+/****** Search ******/
+#header #search{ display:inline-block; float:right; margin-right:10px; width:265px; }
+#header #search input, #header #search #searchBtn{ float:left; border:0px; margin:0px; font-size:13px;
+	border-top:1px solid #AAAAAA; border-bottom:1px solid #AAAAAA; 
+	background: webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#ffffff));
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#ffffff));
+	background: -moz-linear-gradient(top , #f6f6f6, #ffffff);
+}
+#header #search input{ padding:2px 3px 3px 3px; width:202px; border-left:1px solid #AAAAAA; }
+#header #search #searchBtn{ padding:3px 5px; border-right:1px solid #AAAAAA; }
+
+/****** Header Navigation ******/
+#header #headerNavigation{ display:inline-block; float:left; }
+#header #headerNavigation ul{ list-style-type:none; padding:0px; margin:0px; }
+#header #headerNavigation ul li{ display:inline-block; float:left; }
+#header #headerNavigation ul li a{ display:block; padding:8px 6px 5px 6px; margin:10px -1px 0px 0px; border-bottom:1px solid #a7d7f9; border-left:1px solid #a7d7f9; border-right:1px solid #a7d7f9; }
+#header #headerNavigation ul li a:hover{  }
+#header #headerNavigation ul li a.here{ background:white; border-bottom:1px solid white; }
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ clear:both; }
+#body a{ }
+
+/****** Sidebar ******/
+#body #sideBar{ display:block; position:absolute; width:160px; top:80px; padding:16px 9px 10px 11px; font-size:12px; background:#f6f6f6; overflow:hidden; }
+#body #sideBar ul{ list-style-type:none; padding:0px; }
+#body #sideBar ul li{ padding:4px; }
+#body #sideBar ul li a{  }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{  }
+
+/****** Content ******/
+#body #content{ display:block; margin-left:180px; padding:16px; background:white; border-left:1px solid #a7d7f9; border-bottom:1px solid #a7d7f9; overflow:hidden; }
+
+/****** Content Text ******/
+#body #content #text{  }
+#body #content p{  }
+
+
+/****** Content Elements ******/
+#body #content #picElements{  }
+#body #content #picElements .element{ display:inline-block; width:250px; float:left; margin:8px 21px 22px 21px; padding:3px; background-color:#F9F9F9; border:1px solid #CCCCCC; }
+#body #content #picElements .element img{ width:250px; height:190px; margin:0px auto; }
+#body #content #picElements .element p{ padding:3px; font-size:12px; }
+
+/****** Ad Bar ******/
+#body #adBar{ display:none; }
+#body #adBar #adBarImg{  }
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ clear:both; background:#f9f9f9; margin-left:180px; padding:12px; font-size:11px; }
+
+/****** Navigation ******/
+#footer #footerNavigation{  }
+#footer #footerNavigation ul{ list-style-type:none; margin:0px; padding:0px; }
+#footer #footerNavigation ul li{ display:inline-block; }
+#footer #footerNavigation ul li h2{ border:0px; }
+#footer #footerNavigation ul li h2 a{ font-size:11px; }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{ display:none; }
+#footer #footerNavigation ul li ul li{  }
+#footer #footerNavigation ul li ul li a{  }
+
+
+/****** Copyright ******/
+#footer #copyright{  }
+#footer #copyright p{  }

@@ -1,0 +1,100 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px; padding:0x; color:#333; font-family:"lucida grande",tahoma,verdana,arial,sans-serif; font-size:11px; left-align:left; }
+h1, h2, h3{  }
+h1{  }
+h2{  }
+h3{  }
+p{  }
+a{ text-decoration:none; }
+a:link{  }
+a:visited{  }
+a:hover{  }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{ width:100%; height:37px; background-color:#3B5998; border-bottom: 1px solid #133783; }
+#header #headerInner{ width:981px; margin:0px auto; }
+
+/****** Logo ******/
+#header #logo{ display:inline-block; float:left; width:176px; }
+#header #logo #logoImg{ width:103px; display:block; height:31px; margin:6px 0px 0px 0px; background:url('../images/facebook_logo.png') no-repeat; }
+
+/****** Search ******/
+#header #search{ display:inline-block; float:left; color:#777; margin:7px 0px 0px 4px; }
+#header #search input{ display:inline-block; float:left; width:315px; margin:2px 0px 0px 5px; padding:5px 5px 4px; font-size:10px;
+	border-top-left-radius:2px; border-bottom-left-radius:2px;
+	border-top:1px solid #123682; border-left:1px solid #294a8f; border-bottom:1px solid #294a8f; }
+#header #search #searchBtn{ display:inline-block; float:left; margin:2px 0px; padding:5px 4px 4px 4px; background:#fff;
+	border-top:1px solid #123682; border-right:1px solid #294a8f; border-bottom:1px solid #294a8f; border-left:1px solid #ddd; 
+	border-top-right-radius:2px; border-bottom-right-radius:2px; }
+
+/****** Header Navigation ******/
+#header #headerNavigation{ display:inline-block; float:right; list-style:none; }
+#header #headerNavigation ul{ list-style-type:none; margin:9px 1px 0px 0px; padding:6px 0px 0px 0px; }
+#header #headerNavigation ul li{ display:inline-block; float:right; height:31px; }
+#header #headerNavigation ul li a{ color:#D8DFEA; font-weight:bold; border-right:1px solid #526da4; margin-top:9px; padding:0px 8px; z-index:1; }
+#header #headerNavigation ul li a:visited{ color:#D8DFEA; }
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ clear:both; width:970px; margin:0px auto 30px auto; padding:0px 5px 25px 0px; overflow:hidden; }
+#body a{  }
+
+/****** Sidebar ******/
+#body #sideBar{ display:none; }
+#body #sideBar ul{  }
+#body #sideBar ul li{  }
+#body #sideBar ul li a{  }
+#body #sideBar ul li a:hover{  }
+#body #sideBar ul li a.here{  }
+
+/****** Content ******/
+#body #content{  }
+
+/****** Content Text ******/
+#body #content #text{ padding-bottom:15px; }
+#body #content p{  }
+
+/****** Content Elements ******/
+#body #content #picElements{ width:624px; display:inline-block; float:left; }
+#body #content #picElements .element{ display:inline-block; float:left; width:156px; height:127px; }
+#body #content #picElements .element img{ width:138px; height:78px; margin:0px; }
+#body #content #picElements .element p{ color:#0033cc; font-size:11px; margin:2px 0px 0px 0px; }
+
+/****** Ad Bar ******/
+#body #adBar{ display:inline-block; float:right; width:300px; height:600px; padding:0px; }
+#body #adBar #adBarImg{ width:160px; height:600px; background:url('../images/adImg.png') no-repeat; }
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ clear:both; border-top:1px solid #F3F3F3; margin-top:19px; }
+#footerInner{ width:970px; margin:0px auto 132px auto; padding-left:20px; }
+
+/****** Navigation ******/
+#footer #footerNavigation{ clear:both; padding:6px 0px 0px 0px; }
+#footer #footerNavigation ul{ list-style-type:none; display:inline; margin:0px; padding:0px;  }
+#footer #footerNavigation ul li{ display:inline-block; margin-right:21px; }
+#footer #footerNavigation ul li h2{ border:0px; margin:0px; padding:0px; }
+#footer #footerNavigation ul li h2 a{ color:#03c; font-weight:normal; font-size:13px; display:block; margin-top:5px; }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{ display:none; }
+#footer #footerNavigation ul li ul li{  }
+#footer #footerNavigation ul li ul li a{  }
+
+
+/****** Copyright ******/
+#footer #copyright{ font-size:11px; color:#666; }
+#footer #copyright p{ margin-top:6px; }

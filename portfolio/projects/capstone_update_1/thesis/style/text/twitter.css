@@ -1,0 +1,4 @@
+/****** Content Text ******/
+#body #content #text{ background:#f5f5f5; padding:15px 20px; }
+#body #content p{ display:none; }
+#body #content h2{ display:none; }

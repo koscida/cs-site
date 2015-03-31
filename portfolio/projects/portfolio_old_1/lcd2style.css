@@ -1,0 +1,215 @@
+body {
+	background-color:#eee;
+}
+#container {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top: 2px solid #fff;
+	border-right:4px solid #ccc;
+	border-bottom:4px solid #aaa;
+	border-left:2px solid #ccc;
+	background-color:white;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+#logo {
+	background-image: url('image/lcdtitle.png');
+	border:0px solid blue;
+	margin:0px 0px 5px 30px;
+	overflow:visible;
+	width:227px;
+	height:90px;
+	z-index:1;
+}
+#titlepicture {
+	border:0px solid blue;
+	margin: 7px 30px 5px 0px;
+	width:700px;
+	height:80px;
+	float:right;
+	overflow:visible;
+	z-index:-1;
+}
+#navigation {
+	width: 150px;
+	margin-left: 30px;
+	margin-bottom:4px;
+	padding:0px;
+	clear:both;
+	float:left;
+	border:0px solid red;
+}
+ul.navigation,li.navigation {
+	width: 150px;
+	list-style-type: none;
+	margin:0px 0px 1px 0px;
+	display:block;
+	padding:0px;
+}
+a.navigation:link,a.navigation:visited {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	text-align:center;
+	color: #303285;
+	margin:0px;
+	padding:4px;
+	display:block;
+	text-decoration:none;
+	background-image: url('image/orange.png');
+}
+a.navigation:hover,a.navigation:active{
+	background-image:url('image/oranger.png');
+}
+
+/********************************* changing front picture *************************/
+#frontpic{
+	margin:0px 0px auto auto;
+	width:700px;
+	float:right;
+	clear:right;
+	border:0px solid black;
+}
+#pictures {
+	padding: 0px;
+	margin:0px;
+	float: left;
+	overflow: hidden;
+	width:150px;
+}
+.pic{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	border:0px solid green;
+	clear:both;
+	height:87px;
+	display:inline;
+	list-style-type: none;
+}
+#currentpic{
+	height:271px;
+	width:368px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	float:left;
+	border:0px solid blue;
+}
+#aboutcurrentpicheader{
+	background-image:url(image/orange.png);
+	width:130px;
+	float:right;
+	margin:0px 30px 0px 0px;
+	padding:3px 10px;
+	color:#303285;
+	font-size:14px;
+	font-family:"times","georgia";
+	text-align:center;
+	text-decoration:none;
+	border:0px solid red;
+	display:inline;
+}
+#aboutcurrentpic{
+	float:right;
+	width:130px;
+	height:228px;
+	margin:0px 30px 0px 0px;
+	padding:10px;
+	overflow:hidden;
+	background-image:url('image/grey.png');
+	background-repeat:repeat-x;
+	color:#505050;
+	text-align:left;
+	text-indent:0px;
+	font-size:12px;
+	font-family:"times","georgia";
+	text-decoration:none;
+	border:0px solid red;
+	clear:right;
+}
+
+#about {
+	border:0px solid black;
+	clear:both;
+	float: right;
+	width: 670px;
+	margin:15px 30px 15px 0px;
+	overflow: hidden;
+	color:#444;
+	font-size:14px;
+	font-family:"times","georgia";
+}
+#contacts{
+	clear:left;
+	width:150px;
+	margin-left:30px;
+	padding-top:0px;
+	border:0px solid green;
+}
+#publications {
+	float: right;
+	width: 320px;
+	margin-right: 30px;
+	padding:0px;
+	border:0px solid green;
+}
+#news {
+	float:right;
+	width: 320px;
+	margin-right: 30px;
+	padding:0px;
+	border:0px solid green;
+}
+.eventheader{
+	background-image:url('image/orange.png');
+	margin-bottom:5px;
+	color:#303285;
+	font-weight:bold;
+	text-indent:20px;
+	padding:2px 0px;
+	font-size:20px;
+	font-family:"times","georgia";
+}
+.event{
+	border-bottom:2px solid #ff9000;
+	border-left:2px solid #ff9000;
+	margin-bottom:8px;
+	color:#444;
+	padding-left:4px;
+	padding-bottom:2px;
+	font-size:14px;
+	font-family:"times","georgia";
+}
+
+/******************************** logos ********************************************/
+p.logo{
+	font-size: 1px;
+	color: #FFF;
+	left: -999px;	
+}
+#logos{
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:25px;
+	width:900px;
+	text-align:center;
+	margin-top:0px;
+	padding:10px;
+	clear:both;
+}
+.individuallogo{
+	border-right:1px solid black;
+	display:inline;
+	margin-right:10px;
+	padding-right:2px;
+	height:54px;
+	clear:both;
+}
+
+/*****************************************link*********************/
+a.link{
+	color:#1a1eb2;
+	text-decoration:none;
+{

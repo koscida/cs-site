@@ -1,0 +1,53 @@
+/*******************************
+ * 		General Overwrite		
+ *******************************/
+body{ margin:0px 8px 8px 8px; padding:0px; color: #000000; font-family: Verdana,Arial,"Helvetica Neue",Helvetica,sans-serif; font-size:12px; }
+h1, h2, h3{  }
+h1{ color:#ff9608; font-size:20px; }
+h1, h2{ padding:0px 0px 2px 0px; margin:0px 0px 5px 0px; border-bottom:1px solid #DDDDDD; }
+h2{ color:#E47911; font-size:16px; }
+h3{  }
+p{  }
+a{ color:#004B91; text-decoration:underline; }
+a:link{  }
+a:visited{ }
+a:hover{ color:#e49711; }
+a:active{  }
+/* 		Container 		*/
+#container{  }
+
+
+
+/*******************
+ * 		Header		
+ ******************/
+#header{  }
+
+
+
+
+
+
+/*******************
+ * 		Body		
+ ******************/
+#body{ clear:both; }
+#body a{ }
+
+
+
+/****** Content ******/
+#body #content{ width:65%; position:absolute; top:140px; margin-left:206px; }
+
+
+
+
+
+
+/*******************
+ * 		Footer		
+ ******************/
+#footer{ clear:both; display:block; padding-top:60px; }
+
+
+

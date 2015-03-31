@@ -1,0 +1,25 @@
+#gallery{ margin:10px 40px 0px 40px; }
+#gallery .frontgallery1{
+	width:695px;
+	height:215px;
+	margin:0px 10px 5px 0px;
+	display:inline-block;
+	float:left;
+}
+#gallery .frontgallery1 img{
+	width:695px;
+	height:215px;
+}
+#gallery .frontgallery2{
+	margin:0px 0px 0px 0px;
+	padding:1px 5px 1px 0px;
+	display:inline-block;
+	float:right;
+}
+#gallery .frontgallery2 img{
+	width:162px;
+	height:50px;
+}
+#gallery .here{margin:0px 8px 0px 0px; }
+
+

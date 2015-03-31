@@ -1,0 +1,10 @@
+/****** Navigation ******/
+#footer #footerNavigation{ clear:both; padding:6px 0px 0px 0px; }
+#footer #footerNavigation ul{ list-style-type:none; display:inline; margin:0px; padding:0px;  }
+#footer #footerNavigation ul li{ display:inline-block; margin-right:21px; }
+#footer #footerNavigation ul li h2{ border:0px; margin:0px; padding:0px; }
+#footer #footerNavigation ul li h2 a{ color:#03c; font-weight:normal; font-size:13px; display:block; margin-top:5px; }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{ display:none; }
+#footer #footerNavigation ul li ul li{  }
+#footer #footerNavigation ul li ul li a{  }

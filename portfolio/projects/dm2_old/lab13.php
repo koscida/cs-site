@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Brittany Kos ~ DM 2</title>
+	<link href="dm2style.css" rel="stylesheet" type="text/css">
+	<style type="text/css"> 
+		#contentthing .block{
+			width:auto;
+			margin:0px 10px;
+			display:inline-block;
+			float:left;
+			overflow:hidden;
+			border:0px solid red;
+		}
+		.block table{
+			color:#ddd;
+			border-collapse:collapse;
+		}
+		.block table td{
+			width:auto;
+			padding:3px;
+			border: 1px solid black;
+		}
+	</style> 
+	
+	<?php
+		
+		function _router()
+		{
+			$action = (isset($_POST['action'])?$_POST['action']:'');
+			switch($action)
+			{
+				case 'add':
+					$DB = @mysqli_connect ("localhost", "kosba", "Test123!", "kosbadb") OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+					$sqlInsert = "insert into phonebook (`FIRST_NAME`, `LAST_NAME`, `CELL_PHONE`, `HOME_PHONE`, `CITY`) values ('Tester', 'McTesterson', '720-555-1234', '303-555-1234', 'Test')";
+					$result = mysqli_query($DB, $sqlInsert);
+					break;
+				case 'update':
+					$DB = @mysqli_connect ("localhost", "kosba", "Test123!", "kosbadb") OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+					$ID = $_POST['personID'];
+					$sqlUpdate = "update phonebook set FIRST_NAME = 'Tricia', LAST_NAME = 'Tester', CELL_PHONE = '555-999-9999', HOME_PHONE = '555-999-9999', CITY = 'Testerville' where ID = ".$ID;
+					$result = mysqli_query($DB, $sqlUpdate);
+					break;
+				case'delete':
+					$DB = @mysqli_connect ("localhost", "kosba", "Test123!", "kosbadb") OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+					$ID = $_POST['personID'];
+					$sqlDelete = "delete from phonebook where ID = ".$ID;
+					$result = mysqli_query($DB, $sqlDelete);
+					break;
+				
+			}
+		}
+		function getData()
+		{
+			$DB = @mysqli_connect ("localhost", "kosba", "Test123!", "kosbadb") OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+			
+			$sqlSelect = "select * from phonebook";
+			$result = mysqli_query($DB, $sqlSelect);
+			while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+				$list[$row['ID']] = array('FIRST_NAME' => $row['FIRST_NAME'], 'LAST_NAME' => $row['LAST_NAME'], 'CELL_PHONE' => $row['CELL_PHONE'], 'HOME_PHONE' => $row['HOME_PHONE'], 'CITY' => $row['CITY']);
+			mysqli_free_result($result);
+			//echo '<pre>'.print_r($list, true).'</pre>';		
+			mysqli_close($DB);
+			return $list;
+		}
+	?>
+	
+	<script src="dm2script.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+
+<!-- header -->
+	<div id="header" type="text/javascript">
+		<script>
+			header('header');
+		</script>
+	</div>
+		
+<!-- content -->
+	<div id="content">
+		<div id="contentthing">
+			<h1>Lab 13 - Mar 29-31, 2011: &nbsp;&nbsp;&nbsp;</h1>
+			<h2> Introduction to MySQL/PHP and MySQL </h2><br/>
+			
+		<!-- HTML -->
+		<div class="block" style="width:280px;"/>
+			<h3>Queries</h3>
+			
+			<?php 
+			_router();
+			$list = getData();
+			?>
+			
+			<p><strong>Part 1 & 2</strong></p>
+			<p>Create a table. - Done</p>
+			<p>Insert data.</p>
+			<p> This is the data that will be inserted into the database:<br/>
+				<strong>First Name:</strong> Tester<br/>
+				<strong>Last Name:</strong> McTesterson<br/>
+				<strong>Cell Phone Number:</strong> 720-555-1234<br/>
+				<strong>Home Number:</strong> 303-555-1234<br/>
+				<strong>City:</strong> Test<br/>
+				<form name="addPerson" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+					<input type="hidden" name="action" value="add" />
+					<input type="submit" value="Add" />
+				</form>
+			</p>
+			
+			<div class="spacer"></div>
+			
+			<p><strong>Part 3</strong></p>
+			<p>Update the data.</p>
+			<p> The row will be changed to<br/>
+				<strong>First Name:</strong> Tricia<br/>
+				<strong>Last Name:</strong> Tester<br/>
+				<strong>Cell Phone Number:</strong> 555-999-9999<br/>
+				<strong>Home Number:</strong> 555-999-9999<br/>
+				<strong>City:</strong> Testerville<br/>
+				Select which row you want to change:
+				<form name="updatePerson" action="<?php echo $_SERVER['PHP_SELF']?>" method="post" >
+					<select name="personID">
+						<?php 
+							foreach($list as $ID => $info)
+								echo '<option value="'.$ID.'"> '.$ID.' </option>';
+						?>
+					</select>
+					<input type="hidden" name="action" value="update" />
+					<input type="submit" value="Update" />
+				</form>
+			</p>
+			
+			<div class="space"></div>
+			
+			<p><strong>Part 4 & 5</strong></p>
+			<p>Perform a query. - DONE</p>
+			<p>Delete one row of data</p>
+			<p> Select a row of data to delete
+				<form name="deletePerson" action="<?php echo $_SERVER['PHP_SELF']?>" method="post" >
+					<select name="personID">
+						<?php 
+							foreach($list as $ID => $info)
+								echo '<option value="'.$ID.'"> '.$ID.' </option>';
+						?>
+					</select>
+					<input type="hidden" name="action" value="delete" />
+					<input type="submit" value="Delete" />
+				</form>
+			</p>
+			
+			
+			<div class="spacer"></div>
+
+		</div>
+		
+		<!-- PHP -->
+		<div class="block">
+			<h3>Table</h3>
+			
+			<table>
+				<thead>
+				<tr>
+					<td>ID <br/>Number</td>
+					<td>First Name</td>
+					<td>Last Name</td>
+					<td>Cell Phone <br/>Number</td>
+					<td>Home Phone <br/>Number</td>
+					<td>City</td>
+				</tr>
+				</thead>
+				<tbody>
+				<?php 
+				foreach($list as $ID => $data)
+				{
+					echo '<tr>';
+					echo '<td>'.$ID.'</td>';
+					echo '<td>'.$data['FIRST_NAME'].'</td>';
+					echo '<td>'.$data['LAST_NAME'].'</td>';
+					echo '<td>'.$data['CELL_PHONE'].'</td>';
+					echo '<td>'.$data['HOME_PHONE'].'</td>';
+					echo '<td>'.$data['CITY'].'</td>';
+					echo '</tr>';
+				}
+				?>
+				</tbody>
+			</table>
+			<?php //echo '<pre>'.print_r($list, true).'</pre>'; ?>
+			
+		</div>
+			
+		<div class="spacer"></div>
+			
+		<h5><a href="lab13.txt">Lab 13</a></h5>
+			
+		</div>
+    </div>
+	
+	
+	
+<!-- footer -->
+	<script type="text/javascript">
+		footer();
+	</script>
+	
+</body>
+</html>

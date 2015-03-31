@@ -1,0 +1,11 @@
+/****** Navigation ******/
+#footer #footerNavigation{  }
+#footer #footerNavigation ul{  }
+#footer #footerNavigation ul li{ list-style-type:none; display:inline-block; }
+#footer #footerNavigation ul li h2{ display:none; }
+#footer #footerNavigation ul li h2 a{  }
+#footer #footerNavigation ul li h2 a:visited{  }
+#footer #footerNavigation ul li ul{ list-style-type:circle; }
+#footer #footerNavigation ul li ul li{ display:block; margin-bottom:5px; }
+#footer #footerNavigation ul li ul li a{ color: #16387C; text-decoration:none; }
+#footer #footerNavigation ul li ul li a:hover{ text-decoration:underline; }

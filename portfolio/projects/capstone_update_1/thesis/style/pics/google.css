@@ -1,0 +1,5 @@
+/****** Content Elements ******/
+#body #content #picElements{ border-top:1px solid #dedede; padding-top:17px; }
+#body #content #picElements .element{ margin:0px 12px 12px 0px; display:inline-block; width:154px; height:180px; float:left; overflow:hidden; }
+#body #content #picElements .element img{ max-width:154px; max-height:120px; display:block; margin:0px auto; }
+#body #content #picElements .element p{ color:#12c; font-size:14px; }

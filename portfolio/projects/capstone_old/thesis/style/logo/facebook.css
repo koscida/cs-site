@@ -1,0 +1,3 @@
+/****** Logo ******/
+#header #logo{ display:inline-block; float:left; width:176px; }
+#header #logo #logoImg{ width:103px; display:block; height:31px; margin:6px 0px 0px 0px; background:url('../../images/facebook_logo.png') no-repeat; }

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+	<title>USCSA Ski Team</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="indexstyle.css" media="screen" title="Default" />
+	<link rel="stylesheet" type="text/css" href="homestyle.css" media="screen" title="Default" />
+	<script type="text/javascript" src="indexscript.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script>
+		var imgNum = 0;
+		var t;
+		var isTimerOn = false;
+		var running = false;
+		
+		function galleryShow()
+		{
+			if(!isTimerOn)
+			{
+				isTimerOn = true;
+				changeImgLg(imgNum);
+			}
+		}
+		function changeImgLg()
+		{
+			//var imgNumLast = (imgNum-1)%4;
+			var imgNumLast = 4;		// becasue % doesn't work?
+			if(imgNum == 0)
+				imgNumLast = 0;
+			else
+				imgNumLast = imgNum;
+			
+			//var imgNumNext = ((imgNum+1)%4);
+			var imgNumNext;		// becasue % doesn't work?
+			if(imgNum == 3)
+				imgNumNext = 0;
+			else
+				imgNumNext = imgNum + 1;
+				
+			
+			$('#galleryImgLg').slideUp(500, function(){				
+				// move previous small pic right
+				if(!running)
+				{
+					$('#galleryImgSmDiv'+imgNumLast).animate({ right: '-=8'}).removeClass('here');
+					$('#galleryImgSmDiv'+imgNum).animate({ right: '-=8'}).removeClass('here');
+				}
+				else
+					running = true;
+				$('#galleryImgSmDiv'+imgNumLast).animate({ right: '-=8'}).removeClass('here');
+			
+				// set new pic
+				document.getElementById("galleryImgLg").src="images/galleryImgLg"+imgNum+".png";
+				
+				// move new pic left
+				$('#galleryImgSmDiv'+imgNum).animate({ right: '+=8'}).addClass('here');
+			});
+			
+			$('#galleryImgLg').slideDown(400);
+			//imgNum = (imgNum+1)%4;
+			if(imgNum == 3)
+				imgNum = 0;
+			else
+				imgNum = imgNum + 1;
+				
+			t = setTimeout("changeImgLg()", 6000);
+		}
+		
+	</script>
+</head> 
+
+
+<body> 
+	<div id="header">
+		<script>header("Home");</script>
+	</div>
+	
+	<div id="body">
+		<div id="body1">
+			<div class="container">
+				<div id="gallery">
+					<!-- large image -->
+					<div class="frontgallery1"><img id="galleryImgLg" src="images/galleryImgLg0.png"/></div>
+					
+					<!-- smaller thumbnail images -->
+					<div id="galleryImgSmDiv0" class="frontgallery2 here"><img id="galleryImgSm0" src="images/galleryImgSm0.png"/></div>
+					<div id="galleryImgSmDiv1" class="frontgallery2"><img id="galleryImgSm1" src="images/galleryImgSm1.png"/></div>
+					<div id="galleryImgSmDiv2" class="frontgallery2"><img id="galleryImgSm2" src="images/galleryImgSm2.png"/></div>
+					<div id="galleryImgSmDiv3" class="frontgallery2"><img id="galleryImgSm3" src="images/galleryImgSm3.png"/></div>
+					
+					<!-- start slide show -->
+					<script>
+						galleryShow();
+						/*$('#galleryImgSm0').click(function() {
+							$('#galleryImgLg').slideUp(400, function(){ document.getElementById("galleryImgLg").src="images/galleryImgSm0.png"; });
+							$('#galleryImgLg').slideDown(300);
+						});
+						$('#galleryImgSm1').click(function() {
+							$('#galleryImgLg').slideUp(400, function(){document.getElementById("galleryImgLg").src="images/galleryImgSm1.png";});
+							$('#galleryImgLg').slideDown(300);
+						});
+						$('#galleryImgSm2').click(function() {
+							$('#galleryImgLg').slideUp(400, function(){document.getElementById("galleryImgLg").src="images/galleryImgSm2.png";});
+							$('#galleryImgLg').slideDown(300);
+						});
+						$('#galleryImgSm3').click(function() {
+							$('#galleryImgLg').slideUp(400, function(){document.getElementById("galleryImgLg").src="images/galleryImgSm3.png";});
+							$('#galleryImgLg').slideDown(300);
+						});*/
+					</script>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="body2">
+			<div class="container">
+			
+			<!-- Row 1 -->
+				<div class="infoElement left">
+					<div class="head">
+						Dryland Conditioning Program
+					</div>
+					<div class="body">
+						<img src="images/dryland.png" alt="Drylane Conditioning Program Icon" />
+						It all starts with conditioning of the body and mind. Join us for this 
+						exciting experience ranging from mountain biking, hiking, track work, 
+						trail running, and weight lifting amongst other fun activities. Dryland 
+						runs daily from 4:00-5:30pm September through November.
+						<br/><br/><br/><br/><br/>
+					</div>
+				</div>
+				
+				<div class="infoElement left">
+					<div class="head">
+						Race-Form Equipment Pricing
+					</div>
+					<div class="body">
+						<img src="images/equipment.png" alt="Race-Form Equipment Pricing Icon" />
+						All the world-class, race-stock equipment you can imagine! Anyone on the 
+						team will benefit from this privilege. Rossignol, Fischer, Volkl, Marker, 
+						Nordica, Tecnica, Lange, etc... All race orders go in during the latter 
+						part of October during our Dryland season.
+						<br/><br/><br/><br/><br/><br/>
+					</div>
+				</div>
+				
+				<div class="infoElement left">
+					<div class="head">
+						On-Snow Training
+					</div>
+					<div class="body">
+						<img src="images/training.png" alt="On-Snow Training Icon" />
+						...And NOW we shift to the SNOW! The intensity of the program picks up 
+						with a couple of pre-season training camps held in Copper Mountain, CO 
+						around Halloween. We then move into daily gate training at Eldora Mountain 
+						Resort at the beginning of November from 8:30-10:30am. Our primary focus 
+						is on the technical events: Giant Slalom and Slalom, although Super G and 
+						Downhill are also an option. There is a heavy emphasis on video analysis.
+					</div>
+				</div>
+				
+			<div class="clear"></div>
+				
+			<!-- Row 2 -->
+				<div class="infoElement left">
+					<div class="head">
+						Race/Race Results
+					</div>
+					<div class="body">
+						<img src="images/race_results.png" alt="Race/Race Results Icon" />
+						...The Stop Watch Is On! While we continue training daily from late November 
+						through mid-April, we are also racing on all the weekends and sometimes during 
+						the week. Our race series ranges from various sanctioning bodies such as: FIS, 
+						FIS-U, FIS-J, to USSA and USCSA (College). We also race in the USCSA Western 
+						Regional Championships during the mid part of February. This program has 
+						captured the USCSA Rocky Mountain Conference Championship title for NINE 
+						consecutive years.
+						<br/><br/><br/><br/><br/>
+					</div>
+				</div>
+				
+				<div class="infoElementDouble right">
+					<div class="head">
+						Race Clip
+					</div>
+					<div class="body">
+						<iframe width="300" height="255" src="http://www.youtube.com/embed/4TwwgtCex8Y" frameborder="0" style="display:inline;float:left;margin:0px 10px 5px 0px;" ></iframe>
+						When not racing, the team trains daily at Eldora Mountain Resort (30 minutes 
+						from Campus). Training consists of Slalom, Giant Slalom, and some Super G with 
+						a heavy emphasis on Video Analysis. A majority of our training and race season 
+						focuses on the technical events (SL/GS), but there are select Super G and 
+						Downhill races as well.
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="body3">
+			<div class="container">
+				<p><b>USCSA Ski Team at the University of Colorado Mission Statement: </b>
+					To provide an opportunity for the students of this University to continue or begin ski 
+					racing after high school, even if they are not Varsity caliber athletes; all ability 
+					levels are welcome. This program is designed as a stepping stone for building character, 
+					friendships, improving team skills, time management skills, physical fitness, mental focus, 
+					and attaining goals.</p>
+				
+				<div class="spacer"></div>
+				
+			</div>
+		</div> <!-- end body3 -->
+	</div> <!-- end body -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="center">
+				<div class="spacer"></div>
+				
+				<div id="ad"><script>ad();</script></div>
+				<div class="spacer"></div>
+				<script>footer();</script>
+				
+				<div class="spacer"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
